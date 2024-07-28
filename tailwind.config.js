@@ -20,16 +20,12 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        PcRepairPros: {
-          "primary": "#F15523",
-          "secondary": "#FB8319",
-          "accent": "#37cdbe",
-          "neutral": "#3d4451",
-          "base-100": "#ffffff",
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          primary: "blue",
+          secondary: "teal",
         },
       },
-      "dark",
-      "cupcake",
     ],
   },
 };

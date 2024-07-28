@@ -72,7 +72,7 @@ const Footer = () => {
               <FaStarHalfAlt />
               </p>
 
-              <p>Based on 40 reviews</p>
+              <p className="text-white">Based on 40 reviews</p>
             </div>
           </div>
         <div className="flex  px-4 rounded-full  w-full lg:w-auto  justify-center space-x-3">
@@ -85,26 +85,26 @@ const Footer = () => {
                 Urgent Need Support?
               </p>
 
-              <p>+123-456-7898 +123 456-7899</p>
+              <p className="text-white">+123-456-7898 +123 456-7899</p>
             </div>
           </div>
         
         </nav>
         <nav>
-          <h6 className="footer-title">Quick Links</h6>
-          <a className="link link-hover">Home One</a>
-          <a className="link link-hover">About Us</a>
-          <a className="link link-hover">Services</a>
-          <a className="link link-hover">Contact Us</a>
-          <a className="link link-hover">Our Blog</a>
+          <h6 className="footer-title text-white">Quick Links</h6>
+          <a className="link link-hover text-white">Home One</a>
+          <a className="link link-hover text-white">About Us</a>
+          <a className="link link-hover text-white">Services</a>
+          <a className="link link-hover text-white">Contact Us</a>
+          <a className="link link-hover text-white">Our Blog</a>
         </nav>
         <nav>
-          <h6 className="footer-title">Our Services</h6>
-          <a className="link link-hover">Laptop Repair</a>
-          <a className="link link-hover">Tablets Repair</a>
-          <a className="link link-hover">Apple Products Repair</a>
-          <a className="link link-hover">Data Recovery</a>
-          <a className="link link-hover">Computer repair</a>
+          <h6 className="footer-title text-white">Our Services</h6>
+          <a className="link link-hover text-white">Laptop Repair</a>
+          <a className="link link-hover text-white">Tablets Repair</a>
+          <a className="link link-hover text-white">Apple Products Repair</a>
+          <a className="link link-hover text-white">Data Recovery</a>
+          <a className="link link-hover text-white">Computer repair</a>
         </nav>
         <form>
           <h6 className="footer-title">Subscribe to Our Newsletter</h6>

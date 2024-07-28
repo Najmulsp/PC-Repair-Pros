@@ -5,19 +5,37 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
-import logo from "../../../public/logo-black.png"
+import logo from "../../../public/logo-black.png";
 import Image from "next/image";
-
-
+import Link from "next/link";
 
 const Navbar = () => {
+  const navItems = (
+    <>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/about">About</Link>
+      </li>
+      <li>
+        <Link href="/services">Services</Link>
+      </li>
+      <li>
+        <Link href="/blog">Blog</Link>
+      </li>
+      <li>
+        <Link href="/contact">Contact</Link>
+      </li>
+    </>
+  );
   return (
     <>
       {/* first navbar */}
       <header className="p-4 dark:bg-gray-100 flex flex-col lg:gap-16 lg:flex-row justify-between  dark:text-gray-800">
         <div className="container flex justify-between h-16 mx-auto">
           {/* location card 1 */}
-          <div className="hidden sm:block">
+          <div className="hidden sm:block ">
             <div className="flex justify-center space-x-3">
               <div className=" flex items-center">
                 <CiLocationOn className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
@@ -31,7 +49,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* working hours 2 */}
-          <div className="hidden sm:block">
+          <div className="hidden sm:block md:block">
             <div className="flex justify-center space-x-3">
               <div className="  flex items-center">
                 <SiTimescale className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
@@ -74,12 +92,12 @@ const Navbar = () => {
               <FaInstagram className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
             </div>
             <div className=" flex items-center">
-              <TiSocialLinkedin  className="text-xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+              <TiSocialLinkedin className="text-xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
             </div>
           </div>
         </div>
       </header>
-                      {/* second navbar */}
+      {/* second navbar */}
       <div className="navbar bg-white text-black">
         <div className="navbar-start">
           <div className="dropdown">
@@ -101,57 +119,30 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-[#F3F4F6] rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {navItems}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl">
-            <Image height="30" width="30" alt="PC Repair Logo" src={logo}></Image>
-            PC <span className="text-red-400">Repair</span> Pros
-            </a>
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
+            <Image
+              height="30"
+              width="30"
+              alt="PC Repair Logo"
+              src={logo}
+            ></Image>
+            PC <span className="text-red-400 font-bold">Repair</span> Pros
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          {navItems}
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">Login</button>
+          <button className="btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+            Login
+          </button>
         </div>
       </div>
     </>
