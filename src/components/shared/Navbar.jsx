@@ -4,7 +4,11 @@ import { SiTimescale } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { TiSocialLinkedin } from "react-icons/ti";
+import logo from "../../../public/logo-black.png"
+import Image from "next/image";
+
+
 
 const Navbar = () => {
   return (
@@ -15,8 +19,8 @@ const Navbar = () => {
           {/* location card 1 */}
           <div className="hidden sm:block">
             <div className="flex justify-center space-x-3">
-              <div className=" rounded-full bg-red-100 h-10 mt-3 p-2 flex items-center">
-                <CiLocationOn className="text-2xl text-rose-500" />
+              <div className=" flex items-center">
+                <CiLocationOn className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
               </div>
 
               <div className="">
@@ -29,8 +33,8 @@ const Navbar = () => {
           {/* working hours 2 */}
           <div className="hidden sm:block">
             <div className="flex justify-center space-x-3">
-              <div className=" rounded-full hover:bg-rose-500 hover:text-white bg-red-100 h-10 mt-3 p-2 flex items-center">
-                <SiTimescale className="text-2xl text-rose-500" />
+              <div className="  flex items-center">
+                <SiTimescale className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
               </div>
 
               <div className="">
@@ -60,23 +64,23 @@ const Navbar = () => {
         <div className="flex justify-center  lg:w-2/5 items-center md:space-x-4">
           <div className="grid items-center grid-flow-col gap-4">
             <p className="font-bold pt-1">Follow us on:</p>
-            <div className=" rounded-full bg-red-100 h-10 mt-3 p-2 flex items-center">
-              <FaFacebookF className="text-2xl text-rose-500" />
+            <div className="flex items-center">
+              <FaFacebookF className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
             </div>
-            <div className=" rounded-full bg-red-100 h-10 mt-3 p-2 flex items-center">
-              <FaXTwitter className="text-2xl text-rose-500" />
+            <div className="flex items-center">
+              <FaXTwitter className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
             </div>
-            <div className=" rounded-full bg-red-100 h-10 mt-3 p-2 flex items-center">
-              <FaInstagram className="text-2xl text-rose-500" />
+            <div className="flex items-center">
+              <FaInstagram className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
             </div>
-            <div className=" rounded-full bg-red-100 h-10 mt-3 p-2 flex items-center">
-              <FaLinkedinIn className="text-2xl text-rose-500" />
+            <div className=" flex items-center">
+              <TiSocialLinkedin  className="text-xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
             </div>
           </div>
         </div>
       </header>
-      {/* second navbar */}
-      <div className="navbar bg-base-100">
+                      {/* second navbar */}
+      <div className="navbar bg-white text-black">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -118,7 +122,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">PC Repair Pros</a>
+          <a className="btn btn-ghost text-2xl">
+            <Image height="30" width="30" alt="PC Repair Logo" src={logo}></Image>
+            PC <span className="text-red-400">Repair</span> Pros
+            </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -144,7 +151,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className="btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">Login</button>
         </div>
       </div>
     </>
