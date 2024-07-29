@@ -41,8 +41,15 @@ body {
   width: 100%;
   transform: scale(1.15);
   transition: opacity .6s ease;
+  position: relative;
   
 }
+
+#text-content1{
+  position: absolute; 
+  left: 100px;
+}
+
 #foranimation2{
   animation: grow 5s linear forwards;
   opacity: 1;
@@ -51,6 +58,11 @@ body {
   transition: opacity .6s ease;
   
 }
+#text-content2{
+  position: absolute; 
+  left: 100px;
+}
+
 #foranimation3{
   animation: grow 5s linear forwards;
   opacity: 1;
@@ -59,6 +71,12 @@ body {
   transition: opacity .6s ease;
   
 }
+#text-content3{
+  position: absolute; 
+  left: 100px;
+  top: -230px ;
+}
+
 #foranimation4{
   animation: grow 6s linear forwards;
   opacity: 1;
@@ -66,6 +84,10 @@ body {
   transform: scale(1.15);
   transition: opacity .6s ease;
   
+}
+#text-content4{
+  position: absolute; 
+  left: 100px;
 }
 
 @keyframes grow{
@@ -75,4 +97,26 @@ body {
   75%, 100%{
       transform: scale(1.15);
   }
+}
+
+#rotateStar1{
+  -webkit-animation: spin 7s linear infinite;
+  -moz-animation: spin 7s linear infinite;
+  animation: spin 7s linear infinite;
+}
+#rotateStar2{
+  -webkit-animation: spin 7s linear infinite;
+  -moz-animation: spin 7s linear infinite;
+  animation: spin 7s linear infinite;
+}
+
+/* use keyframes for rotate star */
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
 }

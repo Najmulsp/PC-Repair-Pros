@@ -1,6 +1,8 @@
 import { LuPhoneCall } from "react-icons/lu";
-import shape1 from "../../../public/assets/background/shape-4.png";
-import shape2 from "../../../public/assets/background/shape-5.png";
+// import shape1 from "../../../public/assets/background/shape-4.png";
+// import shape2 from "../../../public/assets/background/shape-5.png";
+import { GiStarShuriken } from "react-icons/gi";
+import { GiBoomerangSun } from "react-icons/gi";
 
 const GetShedule = () => {
   return (
@@ -11,6 +13,8 @@ const GetShedule = () => {
       }}
       className="relative w-10/12 mx-auto  min-h-[520px] border-2 border-red-500 my-12 bg-blue-950"
     >
+      <GiStarShuriken  id="rotateStar1" className="absolute left-10 lg:left-20 bottom-10 lg:bottom-20 text-7xl text-white"/> 
+      <GiBoomerangSun id="rotateStar2" className="absolute right-10 top-2 text-6xl text-white"/>
       <div
         style={{
           backgroundImage: `url(/assets/background/shape-5.png)`,
@@ -34,7 +38,7 @@ const GetShedule = () => {
              +123 456-7898{" "}</p>
         </div>  
             
-          
+        
         
         <span className="text-white lg:text-2xl  ml-6"> OR</span>
         <button className="text-white text-xl  ml-6 btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
