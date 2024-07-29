@@ -31,3 +31,48 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+
+#foranimation1{
+  animation: grow 5s linear forwards;
+  opacity: 1;
+  width: 100%;
+  transform: scale(1.15);
+  transition: opacity .6s ease;
+  
+}
+#foranimation2{
+  animation: grow 5s linear forwards;
+  opacity: 1;
+  width: 100%;
+  transform: scale(1.15);
+  transition: opacity .6s ease;
+  
+}
+#foranimation3{
+  animation: grow 5s linear forwards;
+  opacity: 1;
+  width: 100%;
+  transform: scale(1.15);
+  transition: opacity .6s ease;
+  
+}
+#foranimation4{
+  animation: grow 6s linear forwards;
+  opacity: 1;
+  width: 100%;
+  transform: scale(1.15);
+  transition: opacity .6s ease;
+  
+}
+
+@keyframes grow{
+  0%, 20%{
+      transform: scale(1);
+  }
+  75%, 100%{
+      transform: scale(1.15);
+  }
+}

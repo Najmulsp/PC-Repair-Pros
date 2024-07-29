@@ -17,10 +17,10 @@ import 'swiper/css/pagination';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 import Image from 'next/image';
-import banner1 from "../../../public/assets/banner/laptop repair 1 .jpg";
-import banner2 from "../../../public/assets/banner/laptop repair 2  .jpg";
-import banner3 from "../../../public/assets/banner/laptop repair 3 .jpg";
-import banner4 from "../../../public/assets/banner/laptop repair 4 .jpg";
+import banner1 from "../../../public/assets/banner/laptop repair img 6  .jpg";
+import banner2 from "../../../public/assets/banner/computer-repair113.webp";
+import banner3 from "../../../public/assets/banner/Repair_or_replace_laptop.jpg";
+import banner4 from "../../../public/assets/banner/computer-repair112.webp";
 
 
 
@@ -34,7 +34,7 @@ const Banner = () => {
         loop={true}
         navigation={true}
         autoplay={{
-          delay: 3500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -44,22 +44,22 @@ const Banner = () => {
         className="mySwiper max-h-[80vh]"
       >
         <SwiperSlide>
-          {/* <div
-            style={{ backgroundImage: `url(${banner1})` }} 
-            className=' w-full h-full min-h-[520px]'>
+           <Image id='foranimation1' src={banner1} alt="Banner Image" width="1500" height="50" className='border'></Image> 
+           <div className='bg-blue-950 h-full w-full'>
 
-          </div>
-          <h1 className='text-white'>first image</h1> */}
-           <Image id='foranimation' src={banner1} alt="Banner Image" width="1600" height="100" className='scale-0.5'></Image> 
+           </div>
         </SwiperSlide>
+
         <SwiperSlide>
-          <Image src={banner2} alt="Banner Image" width="1600" height="300"></Image>
+          <Image id='foranimation2' class="zoom-in" src={banner2} alt="Banner Image" width="1600" height="200"></Image>
         </SwiperSlide>
+
         <SwiperSlide>
-          <Image src={banner3} alt="Banner Image" width="1600" height="300"></Image>
+          <Image id='foranimation3' src={banner3} alt="Banner Image" width="1600" height="400"></Image>
         </SwiperSlide>
+
         <SwiperSlide>
-          <Image src={banner4} alt="Banner Image" width="1600" height="300"></Image>
+          <Image id='foranimation4' src={banner4} alt="Banner Image" width="1600" height="300"></Image>
         </SwiperSlide>
         
       </Swiper>

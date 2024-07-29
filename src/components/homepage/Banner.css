@@ -1,4 +1,4 @@
-#foranimation{
+/* #foranimation{
     animation: grow 4s linear forwards;
     opacity: 1;
     width: 100%;
@@ -19,7 +19,7 @@
     }
     to{
         transform: scale(1.5, 1.5);
-    } */
+    } 
 }
 
 #img{
@@ -29,4 +29,4 @@
     100%{
         width: 120%;
     }
-}
+} */
