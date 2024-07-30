@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="hidden sm:block ">
             <div className="flex justify-center space-x-3">
               <div className=" flex items-center">
-                <CiLocationOn className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+                <CiLocationOn className="text-2xl transition-all delay-75 rounded-full  bg-orange-100 hover:bg-orange-500  w-10 h-10 mt-3 p-2  text-orange-500 hover:text-white" />
               </div>
 
               <div className="">
@@ -52,7 +52,7 @@ const Navbar = () => {
           <div className="hidden sm:block md:block">
             <div className="flex justify-center space-x-3">
               <div className="  flex items-center">
-                <SiTimescale className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+                <SiTimescale className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-500  bg-orange-100 w-10 h-10 mt-3 p-2 hover:text-white text-orange-500" />
               </div>
 
               <div className="">
@@ -64,12 +64,12 @@ const Navbar = () => {
           </div>
           {/* urgent support 3*/}
           <div className="flex  px-4 rounded-full bg-orange-100 w-full lg:w-auto  justify-center space-x-3">
-            <div className=" rounded-full bg-rose-500 h-10 mt-3 p-2 flex items-center">
+            <div className=" rounded-full bg-orange-500 h-10 mt-3 p-2 flex items-center">
               <LuPhoneCall className="text-2xl  text-white" />
             </div>
 
             <div className="">
-              <p className="leading-tight text-rose-500 font-bold pt-3">
+              <p className="leading-tight text-orange-500 font-bold pt-3">
                 Urgent Need Support?
               </p>
 
@@ -83,22 +83,22 @@ const Navbar = () => {
           <div className="grid items-center grid-flow-col gap-4">
             <p className="font-bold pt-1">Follow us on:</p>
             <div className="flex items-center">
-              <FaFacebookF className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+              <FaFacebookF className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-500  bg-orange-100 w-10 h-10 mt-3 p-2 hover:text-white text-orange-500" />
             </div>
             <div className="flex items-center">
-              <FaXTwitter className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+              <FaXTwitter className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-500  bg-orange-100 w-10 h-10 mt-3 p-2 hover:text-white text-orange-500" />
             </div>
             <div className="flex items-center">
-              <FaInstagram className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+              <FaInstagram className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-500  bg-orange-100 w-10 h-10 mt-3 p-2 hover:text-white text-orange-500" />
             </div>
             <div className=" flex items-center">
-              <TiSocialLinkedin className="text-xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500" />
+              <TiSocialLinkedin className="text-xl transition-all delay-75 rounded-full hover:bg-orange-500  bg-orange-100 w-10 h-10 mt-3 p-2 hover:text-white text-orange-500" />
             </div>
           </div>
         </div>
       </header>
       {/* second navbar */}
-      <div className="navbar bg-white text-black">
+      <div className="navbar sticky z-10 max-w-7xl bg-white text-black">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -131,7 +131,7 @@ const Navbar = () => {
               alt="PC Repair Logo"
               src={logo}
             ></Image>
-            PC <span className="text-red-400 font-bold">Repair</span> Pros
+            PC <span className="text-orange-500 font-bold">Repair</span> Pros
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
