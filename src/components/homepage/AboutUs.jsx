@@ -34,16 +34,16 @@ const AboutUs = () => {
 			</p>
 			<div className="grid grid-cols-2 gap-6 mb-10">
 				<p className="flex font-bold items-center gap-2">
-				<FaScrewdriverWrench className="text-3xl text-orange-600 bg-orange-100 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
+				<FaScrewdriverWrench className="text-3xl  text-orange-600 bg-orange-100 hover:text-white hover:bg-orange-600 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
 				</p>
 				<p className="flex font-bold items-center gap-2">
-				<GiAutoRepair className="text-3xl text-blue-700 bg-blue-100 w-16 h-16 p-2 rounded-lg"/>Quality Repairs
+				<GiAutoRepair className="text-3xl text-blue-700 bg-blue-100 hover:text-white hover:bg-blue-800 w-16 h-16 p-2 rounded-lg"/>Quality Repairs
 				</p>
 				<p className="flex font-bold items-center gap-2">
-				<ImStopwatch className="text-3xl text-blue-700 bg-blue-100 w-16 h-16 p-2 rounded-lg"/>Quick Turnaround
+				<ImStopwatch className="text-3xl text-blue-700 bg-blue-100 hover:text-white hover:bg-blue-800 w-16 h-16 p-2 rounded-lg"/>Quick Turnaround
 				</p>
 				<p className="flex font-bold items-center gap-2">
-				<FaPeopleCarry className="text-3xl text-orange-600  bg-orange-100 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
+				<FaPeopleCarry className="text-3xl text-orange-600  bg-orange-100 hover:text-white hover:bg-orange-600 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
 				</p>
 			</div>
 			<div>

@@ -1,6 +1,7 @@
 import AboutUs from "./AboutUs";
 import Banner from "./Banner";
 import GetShedule from "./GetShedule";
+import Services from "./Services";
 
 
 
@@ -10,6 +11,7 @@ const HomePage = () => {
             <Banner></Banner>
             <GetShedule></GetShedule>
             <AboutUs></AboutUs>
+            <Services></Services>
         </div>
     );
 };

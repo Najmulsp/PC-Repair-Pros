@@ -44,7 +44,7 @@ const Navbar = () => {
               <div className="">
                 <p className="leading-tight font-bold pt-3">Location:</p>
 
-                <small>2750 Quadra Street Victoria Road, New York, USA</small>
+                <small>2750 Quadra Street, New York, USA</small>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
               <div className="">
                 <p className="leading-tight font-bold pt-3">Working Hours:</p>
 
-                <small>Mon - Fri: 9:30 AM - 5:30 PM</small>
+                <small>Mon - Fri: (9:30 - 5:30) PM</small>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 Urgent Need Support?
               </p>
 
-              <small>+123-456-7898 +123 456-7899</small>
+              <small>+123-456-7898</small>
             </div>
           </div>
         </div>

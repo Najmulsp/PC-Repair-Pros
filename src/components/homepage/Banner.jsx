@@ -89,7 +89,7 @@ const Banner = () => {
             className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
           >
             <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
-              Trusted Computer Repair Experts
+              Where Computer Find Renewed Life
             </h1>
             <p className="w-2/5 text-white pb-8">
               Our skilled technicians are dedicated to restoring your devices to
@@ -118,7 +118,7 @@ const Banner = () => {
             className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
           >
             <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
-              Trusted Computer Repair Experts
+            Repairs Computer Fast & Quick Fix
             </h1>
             <p className="w-2/5 text-white pb-8">
               Our skilled technicians are dedicated to restoring your devices to
@@ -147,7 +147,7 @@ const Banner = () => {
             className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
           >
             <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
-              Trusted Computer Repair Experts
+              Computer Repairs of Any Complexity
             </h1>
             <p className="w-2/5 text-white pb-8">
               Our skilled technicians are dedicated to restoring your devices to
