@@ -25,7 +25,7 @@ const Footer = () => {
         <nav>
         <div className="flex justify-center space-x-3">
               <div className=" flex items-center">
-                <CiLocationOn className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-slate-600 w-12 h-12 mt-3 p-2 hover:text-white text-rose-500" />
+                <CiLocationOn className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-12 h-12 mt-3 p-2 hover:text-white text-orange-500" />
               </div>
 
               <div className="">
@@ -39,16 +39,16 @@ const Footer = () => {
             <p className="font-bold pt-1">Follow us on:</p>
         <div className="grid items-center grid-flow-col gap-4">
             <div className="flex items-center">
-              <FaFacebookF className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
+              <FaFacebookF className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
             </div>
             <div className="flex items-center">
-              <FaXTwitter className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
+              <FaXTwitter className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
             </div>
             <div className="flex items-center">
-              <FaInstagram className="text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
+              <FaInstagram className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
             </div>
             <div className=" flex items-center">
-              <TiSocialLinkedin  className="text-xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
+              <TiSocialLinkedin  className="text-xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
             </div>
           </div>
         </nav>
@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
           </div>
         <div className="flex  px-4 rounded-full  w-full lg:w-auto  justify-center space-x-3">
-            <div className=" rounded-full bg-[#F15523] h-10 mt-3 p-2 flex items-center">
+            <div className=" rounded-full bg-orange-600 h-10 mt-3 p-2 flex items-center">
               <LuPhoneCall className="text-2xl  text-white" />
             </div>
 

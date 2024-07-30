@@ -1,7 +1,16 @@
+"use client";
 import Image from "next/image";
 import loginLogo from "../../../public/assets/logo/computer-repair115.webp"
+import Link from "next/link";
 
 const Login = () => {
+
+    const handleLogin = async () =>{
+        e.preventDefault();
+
+    }
+
+
     return (
         <div>
                                 {/* upper banner */}
@@ -29,17 +38,17 @@ const Login = () => {
 		<div className="w-full max-w-md mr-6 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
     <p className="text-sm text-center dark:text-gray-600">Login to access your account</p>
-	<form noValidate="" action="" className="space-y-6">
+	<form onSubmit={handleLogin} noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">
-			<label htmlFor="username" className="block dark:text-gray-600">Username</label>
-			<input type="text" name="username" id="username" placeholder="Username" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+			<label htmlFor="useremail" className="block dark:text-gray-600">Email</label>
+			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
 		</div>
 		<div className="space-y-1 text-sm">
 			<label htmlFor="password" className="block dark:text-gray-600">Password</label>
 			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
 			
 		</div>
-		<button type="button" className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50">Login</button>
+		<button type="submit" className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50">Login</button>
 	</form>
 	<div className="flex items-center pt-4 space-x-1">
 		<div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
@@ -59,7 +68,7 @@ const Login = () => {
 		</button>
 	</div>
 	<p className="text-xs text-center sm:px-6 dark:text-gray-600">Don't have an account?
-		<a rel="noopener noreferrer" href="#" className="underline dark:text-gray-800">Register</a>
+		<Link rel="noopener noreferrer" href="/register" className="underline dark:text-gray-800">Register</Link>
 	</p>
 </div>
 	</div>
