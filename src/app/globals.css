@@ -120,3 +120,46 @@ body {
 @keyframes spin{
   100%{-webkit-transform: rotate(360deg);}
 }
+
+.hover-effect{
+  position: relative;
+  border-radius: 9999px;
+  z-index: 1;
+}
+    /* button hover effect */
+.hover-effect::before{
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 9999px;
+  transition: width .3s ease-in-out;
+  background-color: rgb(111, 91, 65);
+  z-index: -1;
+}
+
+.hover-effect:hover{
+  color: #fff;
+}
+
+.hover-effect:hover::before{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+      /* card hover effect */
+.cardImage{
+  transition: all 1.1s;
+}
+.my-card:hover .cardImage{
+  transform: scale(1.2);  
+}
+.my-card:hover .text-content{
+  background-color: rgb(5, 12, 62);
+  color: #fff;
+}
+

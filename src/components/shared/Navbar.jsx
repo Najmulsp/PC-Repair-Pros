@@ -126,8 +126,8 @@ const Navbar = () => {
           </div>
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
             <Image
-              height="30"
-              width="30"
+              height={30}
+              width={30}
               alt="PC Repair Logo"
               src={logo}
             ></Image>
@@ -140,9 +140,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+          <Link href={"/login"}><button className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Login
-          </button>
+          </button></Link>
         </div>
       </div>
     </>

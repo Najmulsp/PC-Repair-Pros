@@ -31,10 +31,10 @@ const Banner = () => {
         effect={"fade"}
         loop={true}
         navigation={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 4500,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
         }}
@@ -65,7 +65,7 @@ const Banner = () => {
               their optimal functionality, ensuring you stay connected in todays
               fast-paced digital world.
             </p>
-            <button className="text-white text-xl  btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+            <button className="hover-effect text-white text-xl btn border-[#f2b076] w-52 bg-gradient-to-r border-collapse border from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
           </div>

@@ -4,35 +4,7 @@ import { FaWrench } from "react-icons/fa6";
 
 
 const Services = () => {
-  return (
-    <div>
-      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
-        <div className="min-h-52 relative">
-        <Image src={service1} alt="Service Image" width="400" height="500" className="cover"></Image>
-        <FaWrench className="absolute left-36 -bottom-5 text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500"/>
-        </div>
-        <div className="flex flex-col justify-between p-6 space-y-8">
-          <div className="space-y-2">
-            <h2 className="text-2xl font-semibold tracking-wide">
-            Data Backup & Recovery
-            </h2>
-            <p className="dark:text-gray-800">
-            We working hard to build a reputation of customer satisfaction through technical excellence and friendly staff
-            </p>
-          </div>
-          <button
-            type="button"
-            className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50"
-          >
-            Read more
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const servicesData = [
+  const servicesData = [
     {
       "id": 1,
       "image": "https://example.com/images/data-backup-recovery.jpg",
@@ -70,4 +42,35 @@ const servicesData = [
       "description": "Protect your devices from malware and viruses. We provide antivirus installation and system cleaning services to secure your data."
     }
   ]
+
+
+  return (
+    <div>
+      <div className="max-w-xs my-card rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+        <div className="min-h-52 relative">
+        <Image src={service1} alt="Service Image" width="400" height="500" className="cover cardImage"></Image>
+        <FaWrench className="absolute left-36 -bottom-5 text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500"/>
+        </div>
+        <div className="flex text-content flex-col justify-between p-6 space-y-8">
+          <div className="space-y-2">
+            <h2 className="text-2xl font-semibold tracking-wide">
+            Data Backup & Recovery
+            </h2>
+            <p className="">
+            We working hard to build a reputation of customer satisfaction through technical excellence and friendly staff
+            </p>
+          </div>
+          <button
+            type="button"
+            className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 export default Services;

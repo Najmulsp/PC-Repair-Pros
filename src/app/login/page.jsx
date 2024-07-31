@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
-import loginLogo from "../../../public/assets/logo/computer-repair115.webp"
+// import Image from "next/image";
+// import loginLogo from "../../../public/assets/logo/computer-repair115.webp"
 import Link from "next/link";
 
 const Login = () => {
@@ -32,7 +32,7 @@ const Login = () => {
             <section className="dark:bg-gray-100 dark:text-gray-800">
 	<div className="container flex flex-col justify-center items-center ite p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<Image src={loginLogo} height={600} width={600} alt="login logo" className="rounded-md"/>
+			{/* <Image src={loginLogo} height={600} width={600} alt="login logo" className="rounded-md"/> */}
 		</div>
 
 		<div className="w-full max-w-md mr-6 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
