@@ -57,7 +57,7 @@ const Banner = () => {
             id="text-content1"
             className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
           >
-            <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
+            <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px] ">
               Trusted Computer Repair Experts
             </h1>
             <p className="w-2/5 text-white pb-8">

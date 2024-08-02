@@ -1,11 +1,11 @@
 "use client";
-// import Image from "next/image";
-// import registerLogo from "../../../public/assets/logo/laptop repair img 5 .jpg"
+import Image from "next/image";
+import registerLogo from "../../../public/assets/logo/laptop repair img 5 .jpg"
 import Link from "next/link";
 
 const Register = () => {
 
-    const handleRegister = async () =>{
+    const handleRegister = async (e) =>{
         e.preventDefault();
        
         const  name = e.target.name.value;
@@ -13,7 +13,18 @@ const Register = () => {
         const  password = e.target.password.value;
         const newUser={name, email, password}
         console.log(newUser)
+		const res = await fetch("http://localhost:3000/register/api", {
+			method: "POST",
+			body: JSON.stringify(newUser),
+			headers: {
+				"content-type" : "application/json"
+			}
+		})
     }
+	console.log(res);
+	if(res.status === 200){
+		e.target.reset()
+	}
 
 
     return (
@@ -37,7 +48,7 @@ const Register = () => {
             <section className="dark:bg-gray-100 dark:text-gray-800">
 	<div className="container flex flex-col justify-center items-center ite p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			{/* <Image src={registerLogo} height={500} width={500} alt="Register logo" className="rounded-lg"/> */}
+			<Image src={registerLogo} height={500} width={500} alt="Register logo" className="rounded-lg"/>
 		</div>
 
 		<div className="w-full max-w-md mr-6 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">

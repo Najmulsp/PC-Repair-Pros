@@ -152,13 +152,14 @@ body {
 }
 
       /* card hover effect */
-.cardImage{
-  transition: all 1.1s;
+
+.cardImage img {
+  transition: transform 1.1s;
 }
-.my-card:hover .cardImage{
+.my-card:hover .cardImage img {
   transform: scale(1.2);  
 }
-.my-card:hover .text-content{
+.my-card:hover .text-content {
   background-color: rgb(5, 12, 62);
   color: #fff;
 }

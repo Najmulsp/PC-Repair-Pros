@@ -45,10 +45,12 @@ const Services = () => {
 
 
   return (
-    <div>
-      <div className="max-w-xs my-card rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+    <div className="p-6">
+      <div className="my-card max-w-xs border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">
         <div className="min-h-52 relative">
-        <Image src={service1} alt="Service Image" width="400" height="500" className="cover cardImage"></Image>
+        <div className="cardImage w-fit">
+        <Image src={service1} alt="Service Image" width="350" height="400" ></Image>
+        </div>
         <FaWrench className="absolute left-36 -bottom-5 text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500"/>
         </div>
         <div className="flex text-content flex-col justify-between p-6 space-y-8">

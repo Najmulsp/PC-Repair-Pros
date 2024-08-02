@@ -26,7 +26,7 @@ const AboutUs = () => {
 		<div className="flex lg:w-3/5 border border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
 		<h6 className="mx-auto flex gap-3 items-center text-orange-600 pb-4"><PiStarFourFill className="text-xl" />ABOUT US
 		<PiStarFourFill  className="text-xl" /></h6>
-			<h1 className="text-4xl font-bold leading-none sm:text-5xl">Empowering Your Devices: Crafting Solutions
+			<h1 className="text-4xl font-bold leading-none sm:text-5xl">Empowering Your Devices: <span className="bg-gradient-to-r from-[#f2b076] to-[#f24004] bg-clip-text text-transparent">Crafting Solutions</span>
 				 
 			</h1>
 			<p className="mt-6 mb-8 text-lg sm:mb-12">Welcome to PC Repair Pros, where technology meets expertise. With a passion for problem-solving and a dedication to exceptional service
