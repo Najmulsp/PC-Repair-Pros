@@ -31,10 +31,10 @@ const Banner = () => {
         effect={"fade"}
         loop={true}
         navigation={true}
-        // autoplay={{
-        //   delay: 4500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -55,17 +55,17 @@ const Banner = () => {
                               {/* text-container 1 */}
           <div
             id="text-content1"
-            className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
+            className="absolute -ml-12 lg:ml-0 lg:-top-[400px] text-left inset-0 flex flex-col justify-center"
           >
-            <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px] ">
+            <h1 className="text-3xl lg:text-5xl font-bold text-white w-3/5 lg:w-2/5 pb-2 lg:pb-6 lg:leading-[60px]">
               Trusted Computer Repair Experts
             </h1>
-            <p className="w-2/5 text-white pb-8">
+            <p className="w-3/5 lg:w-2/5 text-white pb-3 lg:pb-8">
               Our skilled technicians are dedicated to restoring your devices to
               their optimal functionality, ensuring you stay connected in todays
               fast-paced digital world.
             </p>
-            <button className="hover-effect text-white text-xl btn border-[#f2b076] w-52 bg-gradient-to-r border-collapse border from-[#f2b076] to-[#f24004] rounded-full">
+            <button className="hover-effect text-white text-xl btn border-[#f2b076] w-44 p-2 lg:w-52 bg-gradient-to-r border-collapse border from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
           </div>
@@ -86,17 +86,17 @@ const Banner = () => {
                               {/* text-container 2 */}
           <div
             id="text-content2"
-            className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
+            className="absolute -ml-12 lg:ml-0 lg:-top-[400px] text-left inset-0 flex flex-col justify-center"
           >
-            <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
+            <h1 className="text-3xl lg:text-5xl font-bold text-white w-3/5 lg:w-2/5 pb-2 lg:pb-6 lg:leading-[60px]">
               Where Computer Find Renewed Life
             </h1>
-            <p className="w-2/5 text-white pb-8">
+            <p className="w-3/5 lg:w-2/5 text-white pb-3 lg:pb-8">
               Our skilled technicians are dedicated to restoring your devices to
               their optimal functionality, ensuring you stay connected in todays
               fast-paced digital world.
             </p>
-            <button className="text-white text-xl  btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+            <button className="hover-effect text-white text-xl btn border-[#f2b076] w-44 p-2 lg:w-52 bg-gradient-to-r border-collapse border from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
           </div>
@@ -107,25 +107,25 @@ const Banner = () => {
             id="foranimation3"
             src={banner3}
             alt="Banner Image"
-            width="1600"
-            height="400"
+            width="1200"
+            height="50"
           ></Image>
                    {/* Bluish overlay */}
                    <div className="absolute inset-0 bg-gray-950 opacity-60"></div>{" "}
                               {/* text-container 3 */}
           <div
             id="text-content3"
-            className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
+            className="absolute -ml-12 lg:ml-0 mt-60 lg:mt-0 lg:-top-[400px] text-left inset-0 flex flex-col justify-center"
           >
-            <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
+            <h1 className="text-3xl lg:text-5xl font-bold text-white w-3/5 lg:w-2/5 pb-2 lg:pb-6 lg:leading-[60px]">
             Repairs Computer Fast & Quick Fix
             </h1>
-            <p className="w-2/5 text-white pb-8">
+            <p className="w-3/5 lg:w-2/5 text-white pb-3 lg:pb-8">
               Our skilled technicians are dedicated to restoring your devices to
               their optimal functionality, ensuring you stay connected in todays
               fast-paced digital world.
             </p>
-            <button className="text-white text-xl  btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+            <button className="hover-effect text-white text-xl btn border-[#f2b076] w-44 p-2 lg:w-52 bg-gradient-to-r border-collapse border from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
           </div>
@@ -144,17 +144,17 @@ const Banner = () => {
                               {/* text-container 4 */}
           <div
             id="text-content4"
-            className="absolute -top-[400px] text-left   inset-0 flex flex-col justify-center "
+            className="absolute -ml-12 lg:ml-0 lg:-top-[400px] text-left inset-0 flex flex-col justify-center"
           >
-            <h1 className="text-5xl font-bold text-white w-2/5 pb-6 leading-[60px]">
+            <h1 className="text-3xl lg:text-5xl font-bold text-white w-4/5 lg:w-2/5 pb-2 lg:pb-6 lg:leading-[60px]">
               Computer Repairs of Any Complexity
             </h1>
-            <p className="w-2/5 text-white pb-8">
+            <p className="w-3/5 lg:w-2/5 text-white pb-3 lg:pb-8">
               Our skilled technicians are dedicated to restoring your devices to
               their optimal functionality, ensuring you stay connected in todays
               fast-paced digital world.
             </p>
-            <button className="text-white text-xl  btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+            <button className="hover-effect text-white text-xl btn border-[#f2b076] w-44 p-2 lg:w-52 bg-gradient-to-r border-collapse border from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
           </div>

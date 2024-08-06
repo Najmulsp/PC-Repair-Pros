@@ -55,10 +55,10 @@ const Footer = () => {
       </footer>
                         {/* second footer */}
       <footer className="footer bg-[#0D003B] text-base-content p-10">
-        <nav>
-        <div className="flex  px-4 rounded-full  w-full lg:w-auto  justify-center space-x-3">
+        <nav >
+        <div className="flex pl-1  w-full lg:w-auto  lg:justify-center space-x-2">
             <div className=" rounded-full  h-10 mt-3 p-2 flex items-center">
-              <FcGoogle  className="text-4xl  text-white" />
+              <FcGoogle  className="text-5xl  text-white" />
             </div>
 
             <div className="">
@@ -75,7 +75,7 @@ const Footer = () => {
               <p className="text-white">Based on 40 reviews</p>
             </div>
           </div>
-        <div className="flex  px-4 rounded-full  w-full lg:w-auto  justify-center space-x-3">
+        <div className="flex px-4 w-full lg:w-auto  justify-center space-x-3">
             <div className=" rounded-full bg-orange-600 h-10 mt-3 p-2 flex items-center">
               <LuPhoneCall className="text-2xl  text-white" />
             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                 placeholder="Your Email Address"
                 className="input rounded-l-full input-bordered join-item"
               />
-              <button className="btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full join-item">Subscribe</button>
+              <button className=" btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full join-item">Subscribe</button>
             </div>
           </fieldset>
         </form>

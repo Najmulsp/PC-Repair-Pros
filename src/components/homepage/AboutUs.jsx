@@ -13,7 +13,7 @@ import { FaPeopleCarry } from "react-icons/fa";
 const AboutUs = () => {
     return (
         <div>
-            <section className="dark:bg-gray-100 dark:text-gray-800">
+            <section className="bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF] dark:text-gray-800">
 	<div className="container flex  gap-6 flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="grid grid-cols-2 border box-border border-red-600 items-center justify-center ">
 			

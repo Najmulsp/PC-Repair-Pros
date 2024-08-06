@@ -29,35 +29,32 @@ const GetShedule = () => {
       <h1 className="absolute w-4/5  mx-auto text-2xl lg:text-5xl font-bold text-white left-12 lg:left-24 text-center leading-[30px] lg:leading-[60px] mt-20 z-10">
         We Repair, You Relax. Click Below and Lets Fix Your Devices!
       </h1>
-      <div className="flex justify-center items-center gap-6 flex-col  lg:flex-row   px-4 rounded-full  w-full lg:w-auto   space-x-3 mt-60 absolute lg:left-44">
+      <div className="flex justify-center items-center gap-4 lg:gap-6 flex-col lg:flex-row  px-4  w-full lg:w-auto lg:space-x-3 mt-44 lg:mt-60 absolute lg:left-44">
         
 
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex  gap-2 justify-center items-center">
             <div className=" rounded-full bg-[#F15523] w-10 h-10 p-2 flex items-center">
           <LuPhoneCall className="text-2xl  text-white" />
             </div>
             <p className="leading-tight text-[#F15523] lg:text-4xl font-bold">
              +123 456-7898{" "}</p>
         </div>  
-            
-        
-        
         <span className="text-white lg:text-2xl  ml-6"> OR</span>
-        <button className="text-white text-xl  ml-6 btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+        <button className="hover-effect text-white text-xl  ml-6 btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
       </div>
 
-      <div className="absolute bottom-32 left-80 flex justify-center space-x-3">
+      <div className="absolute bottom-28 lg:bottom-32 left-16 lg:left-80 flex justify-center space-x-3">
               <div className="  flex items-center">
               <FcQuestions className="text-2xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-red-100 w-12 h-12 mt-3 p-2 hover:text-white text-rose-500" />
               </div>
 
-              <div className="">
+              <div className=" w-3/5 lg:w-full">
                 <p className="leading-tight text-white font-bold pt-3">Request free consultation
                 </p>
 
-                <small className="text-white">Get answers and advice from people you want it from.</small>
+                <small className="text-white ">Get answers and advice from people you want it from.</small>
               </div>
             </div>
     </div>

@@ -2,6 +2,7 @@ import AboutUs from "./AboutUs";
 import Banner from "./Banner";
 import GetShedule from "./GetShedule";
 import Services from "./Services";
+import WhyChoose from "./WhyChoose";
 
 
 
@@ -11,6 +12,7 @@ const HomePage = () => {
             <Banner></Banner>
             <GetShedule></GetShedule>
             <AboutUs></AboutUs>
+            <WhyChoose></WhyChoose>
             <Services></Services>
         </div>
     );
