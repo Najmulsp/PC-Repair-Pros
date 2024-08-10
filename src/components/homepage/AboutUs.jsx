@@ -15,7 +15,7 @@ const AboutUs = () => {
         <div>
             <section className="bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF] dark:text-gray-800">
 	<div className="container flex  gap-6 flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-		<div className="grid grid-cols-2 border box-border border-red-600 items-center justify-center ">
+		<div className="grid grid-cols-2 box-border border-red-600 items-center justify-center ">
 			
 			<Image src={img1} alt="" width="400" height="400" className="rounded-r-full"></Image>
 			<Image src={img2} alt="" width="400" height="400" className="rounded-l-full"></Image>
@@ -23,7 +23,7 @@ const AboutUs = () => {
 			<Image src={img4} alt="" width="400" height="400" className="rounded-l-full"></Image>
 		</div>
 					{/* text-container */}
-		<div className="flex lg:w-3/5 border border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
+		<div className="flex lg:w-3/5 border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
 		<h6 className="mx-auto flex gap-3 items-center text-orange-600 pb-4"><PiStarFourFill className="text-xl" />ABOUT US
 		<PiStarFourFill  className="text-xl" /></h6>
 			<h1 className="text-4xl font-bold leading-none sm:text-5xl">Empowering Your Devices: <span className="bg-gradient-to-r from-[#f2b076] to-[#f24004] bg-clip-text text-transparent">Crafting Solutions</span>

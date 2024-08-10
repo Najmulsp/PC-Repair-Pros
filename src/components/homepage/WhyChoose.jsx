@@ -125,7 +125,7 @@ const WhyChoose = () => {
             />
           </div>
           {/* batch div 3 */}
-          <div className=" border  col-span-12 lg:col-span-4 flex flex-col justify-center gap-10 items-center">
+          <div className="col-span-12 lg:col-span-4 flex flex-col justify-center gap-10 items-center">
             <div className=" lg:ml-20 bg-[#F6F7FF] w-full lg:w-[300px] rounded-full text-center py-10 ">
             
               <h1 className="text-4xl font-bold text-orange-500">
