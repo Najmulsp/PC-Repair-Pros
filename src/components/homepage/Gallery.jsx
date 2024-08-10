@@ -11,7 +11,7 @@ import { GiStarShuriken } from "react-icons/gi";
 const Gallery = () => {
     return (
         <div className="bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF]">
-            <div className="max-w-6xl py-6 mx-auto ">
+            <div className="max-w-6xl py-6 pb-12 mx-auto ">
 
             
             <p className="flex items-center mx-auto  justify-center pt-2 gap-3">
@@ -28,20 +28,35 @@ const Gallery = () => {
                     <GiStarShuriken className="text-4xl"/>
                     </div>
                 </div>
-                <div className="col-span-8 lg:col-span-2">
-                <Image src={gallery2} width={400} height={400} alt="galley image2" className="rounded-xl"/>
+                <div className="main-container col-span-8 lg:col-span-2">
+                <Image src={gallery2} width={400} height={400} alt="galley image2" className="image rounded-xl"/>
+                    <div className="overlay">
+                    <GiStarShuriken className="text-4xl"/>
+                    </div>
                 </div>
-                <div className="col-span-8 lg:col-span-2">
-                <Image src={gallery3} width={400} height={400} alt="galley image3" className="rounded-xl"/>
+                <div className="main-container col-span-8 lg:col-span-2">
+                <Image src={gallery3} width={400} height={400} alt="galley image3" className="image rounded-xl"/>
+                    <div className="overlay">
+                    <GiStarShuriken className="text-4xl"/>
+                    </div>
                 </div>
-                <div className="col-span-8 lg:col-span-2">
-                <Image src={gallery4} width={400} height={400} alt="galley image4" className="rounded-xl"/>
+                <div className="main-container col-span-8 lg:col-span-2">
+                <Image src={gallery4} width={400} height={400} alt="galley image4" className="image rounded-xl"/>
+                    <div className="overlay">
+                    <GiStarShuriken className="text-4xl"/>
+                    </div>
                 </div>
-                <div className="col-span-8 lg:col-span-2">
-                <Image src={gallery5} width={400} height={400} alt="galley image5" className="rounded-xl"/>
+                <div className="main-container col-span-8 lg:col-span-2">
+                <Image src={gallery5} width={400} height={400} alt="galley image5" className="image rounded-xl"/>
+                    <div className="overlay">
+                    <GiStarShuriken className="text-4xl"/>
+                    </div>
                 </div>
-                <div className="col-span-8 lg:col-span-4">
-                <Image src={gallery6} width={700} height={700} alt="galley image6" className="rounded-xl"/>
+                <div className="main-container col-span-8 lg:col-span-4">
+                <Image src={gallery6} width={700} height={700} alt="galley image6" className="image rounded-xl"/>
+                    <div className="overlay">
+                    <GiStarShuriken className="text-4xl"/>
+                    </div>
                 </div>
             </div>
             </div>

@@ -13,7 +13,7 @@ const GetShedule = () => {
         backgroundImage: `url(/assets/background/shape-4.png)`,
         backgroundRepeat: "no-repeat",
       }}
-      className="relative w-10/12 mx-auto  min-h-[520px] border-2 border-red-500 my-12 bg-blue-950"
+      className="relative w-10/12 mx-auto  min-h-[520px] rounded-xl my-12 bg-blue-950"
     >
       <GiStarShuriken  id="rotateStar1" className="absolute left-10 lg:left-20 bottom-10 lg:bottom-20 text-7xl text-blue-100 hover:text-blue-400"/> 
       <GiBoomerangSun id="rotateStar2" className="absolute right-10 top-2 text-6xl text-orange-100 hover:text-orange-400"/>
