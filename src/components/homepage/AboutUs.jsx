@@ -1,9 +1,9 @@
 import Image from "next/image";
+import icon1 from "../../../public/assets/logo/shape-16.png";
 import img1 from "../../../public/assets/about section/about-us-1.webp";
 import img2 from "../../../public/assets/about section/about-us-2.webp";
 import img3 from "../../../public/assets/about section/about-us-3.webp";
 import img4 from "../../../public/assets/about section/about-us-4.webp";
-import { PiStarFourFill } from "react-icons/pi";
 import { GiAutoRepair } from "react-icons/gi";
 import { ImStopwatch } from "react-icons/im";
 import { FaScrewdriverWrench } from "react-icons/fa6";
@@ -24,8 +24,11 @@ const AboutUs = () => {
 		</div>
 					{/* text-container */}
 		<div className="flex lg:w-3/5 border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
-		<h6 className="mx-auto flex gap-3 items-center text-orange-600 pb-4"><PiStarFourFill className="text-xl" />ABOUT US
-		<PiStarFourFill  className="text-xl" /></h6>
+		<p className="flex ml-24 pb-2 text-orange-500 items-center mx-auto  justify-start pt-2 gap-3">
+              <Image src={icon1} width={40} height={40} alt="icon" />
+              ABOUT US
+              <Image src={icon1} width={40} height={40} alt="icon" />
+            </p>
 			<h1 className="text-4xl font-bold leading-none sm:text-5xl">Empowering Your Devices: <span className="bg-gradient-to-r from-[#f2b076] to-[#f24004] bg-clip-text text-transparent">Crafting Solutions</span>
 				 
 			</h1>

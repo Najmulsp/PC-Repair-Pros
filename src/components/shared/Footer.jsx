@@ -9,18 +9,22 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-
+import icon1 from "../../../public/assets/logo/shape-16.png";
+import icon2 from "../../../public/assets/logo/shape-15.png";
 
 const Footer = () => {
   return (
     <div>
       <footer className="footer bg-[#0D003B] text-neutral-content p-10">
-        <nav>
+        <nav className="relative">
           <div className=" flex items-center gap-6 justify-center">
           <Image width="30" height="30" alt="PC Repair Logo" src={logo}></Image>
           <h6 className="text-white text-2xl footer-title">PC Repair Pros</h6>
           </div>
           <p>Our skilled technicians are dedicated to restoring your <br /> devices to their optimal functionality.</p>
+          <div className="absolute -bottom-16 lg:-bottom-20 left-8 rotateStar4">
+          <Image src={icon2} width={70} height={70} alt="icon" className=""/>
+          </div>
         </nav>
         <nav>
         <div className="flex justify-center space-x-3">
@@ -35,7 +39,7 @@ const Footer = () => {
               </div>
               </div>
         </nav>
-        <nav>
+        <nav className="relative">
             <p className="font-bold pt-1">Follow us on:</p>
         <div className="grid items-center grid-flow-col gap-4">
             <div className="flex items-center">
@@ -50,6 +54,9 @@ const Footer = () => {
             <div className=" flex items-center">
               <TiSocialLinkedin  className="text-xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
             </div>
+          </div>
+          <div className="absolute bottom-80 left-6 rotateStar4">
+          <Image src={icon1} width={70} height={70} alt="icon" />
           </div>
         </nav>
       </footer>
