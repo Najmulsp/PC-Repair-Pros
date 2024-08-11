@@ -114,7 +114,7 @@ const Footer = () => {
           <a className="link link-hover text-white">Computer repair</a>
         </nav>
         <form>
-          <h6 className="footer-title">Subscribe to Our Newsletter</h6>
+          <h6 className="footer-title text-gray-100">Subscribe to Our Newsletter</h6>
           <fieldset className="form-control w-80">
             
             <div className="join">

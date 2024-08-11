@@ -10,6 +10,7 @@ import icon1 from "../../../public/assets/logo/shape-16.png";
 import { FaStar } from "react-icons/fa6";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { CiLocationOn } from "react-icons/ci";
+import { FaCircle } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
@@ -30,10 +31,10 @@ const Testimonial = () => {
           <div className="p-6 space-y-2 lg:col-span-8">
             {/* second div */}
 
-            <section className=" dark:text-gray-800">
-              {/* <div className="absolute bg-gradient-to-r from-[#ef6d27] to-[#F6F7FF] h-40 w-40 rounded-full">
-
-              </div> */}
+            <section className="relative dark:text-gray-800">
+            <div className="absolute  lg:-top-16 lg:right-36">
+              <FaCircle className="logo" />
+          </div>
               <div className="container p-6 mx-auto -pb-6">
                 <Swiper
                   slidesPerView={2}
@@ -123,10 +124,10 @@ const Testimonial = () => {
 
                             <div className="text-white">
                               <p className="leading-tight font-bold pt-3">
-                                Location:
+                                Jhon Doe
                               </p>
 
-                              <small>2750 Quadra Street, New York, USA</small>
+                              <small>CEO at Shynet.Ltd</small>
                             </div>
                           </div>
                         </div>

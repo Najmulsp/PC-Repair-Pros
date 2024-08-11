@@ -14,8 +14,10 @@ const BookShedule = () => {
             </p>
 			<p className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Schedule Expert Repairs Instantly</p>
 		</div>
-	<div className="container  mx-auto flex flex-col lg:flex-row gap-6">
-        <Image src={service1} width={400} height={600} alt="icon" />
+	<div className="container  mx-auto flex flex-col lg:flex-row items-center gap-6">
+        <div>
+		<Image src={service1} width={400} height={600} alt="icon" className="rounded-xl"/>
+		</div>
                                     {/* form */}
                     <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
 				<div className="col-span-full">
