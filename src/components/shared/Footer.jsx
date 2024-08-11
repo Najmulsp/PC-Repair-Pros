@@ -55,7 +55,7 @@ const Footer = () => {
               <TiSocialLinkedin  className="text-xl transition-all delay-75 rounded-full hover:bg-orange-600  bg-slate-600 w-10 h-10 mt-3 p-2 text-slate-200" />
             </div>
           </div>
-          <div className="absolute bottom-80 left-6 rotateStar4">
+          <div className="absolute -top-[302px]  -right-36 lg:-top-[75px] lg:-right-20 rotateStar4">
           <Image src={icon1} width={70} height={70} alt="icon" />
           </div>
         </nav>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import service1 from "../../../public/assets/service/laptop repair 2  .jpg";
 import { FaWrench } from "react-icons/fa6";
-
+import icon1 from "../../../public/assets/logo/shape-16.png";
 
 const Services = () => {
   const servicesData = [
@@ -45,8 +45,20 @@ const Services = () => {
 
 
   return (
-    <div className="p-6">
-      <div className="my-card max-w-xs border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">
+    <div className="">
+      
+      <section className="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+	<div className="container p-6 mx-auto space-y-8">
+		<div className="space-y-2 text-center">
+        <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
+              <Image src={icon1} width={40} height={40} alt="icon" />
+              OUR SERVICES
+              <Image src={icon1} width={40} height={40} alt="icon" />
+            </p>
+			<p className=" text-4xl font-bold dark:text-gray-600">Fast and Reliable Repairs for <br /> Every Need</p>
+		</div>
+		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="my-card max-w-xs border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">
         <div className="min-h-52 relative">
         <div className="cardImage w-fit">
         <Image src={service1} alt="Service Image" width="350" height="400" ></Image>
@@ -70,6 +82,11 @@ const Services = () => {
           </button>
         </div>
       </div>
+			
+			
+		</div>
+	</div>
+</section>
     </div>
   );
 };

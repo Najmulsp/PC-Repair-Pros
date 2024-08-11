@@ -124,14 +124,14 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-serif">
             <Image
               height={30}
               width={30}
               alt="PC Repair Logo"
               src={logo}
             ></Image>
-            PC <span className="text-orange-500 font-bold">Repair</span> Pros
+            PC <span className="text-orange-500 font-bold font-serif">Repair</span> Pros
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

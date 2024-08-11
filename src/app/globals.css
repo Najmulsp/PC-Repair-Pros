@@ -115,7 +115,7 @@ body {
   -moz-animation: spin 12s linear infinite;
   animation: spin 12s linear infinite;
 }
-
+      /* nave icon rotate */
 .rotateStar4{
   -webkit-animation: spin 12s linear infinite;
   -moz-animation: spin 12s linear infinite;
@@ -259,6 +259,11 @@ position: relative;
 .dancing-up:hover{
   transform: translateY(-10px);
 }
+
+.dancing-up:hover {
+  color: orangered;
+}
+
         /* blog image hover effect */
 .roundHover{
     border-top-left-radius: 9999px;

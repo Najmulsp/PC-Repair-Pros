@@ -48,13 +48,13 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase">
-                      Exceptional Expertise
+                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
+                        Exceptional Expertise
                     </span>
                   </span>
                   <span className="text-xl font-bold tracking-wider uppercase"></span>
                 </h3>
-                <p>
+                <p className="pl-2">
                   Our skilled technicians bring years of experience and
                   specialized knowledge to ensure precise, reliable repairs for
                   your devices.
@@ -66,12 +66,12 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase">
+                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
                       Customer-Centric Approach
                     </span>
                   </span>
                 </h3>
-                <p>
+                <p className="pl-2">
                   Our skilled technicians bring years of experience and
                   specialized knowledge to ensure precise, reliable repairs for
                   your devices.
@@ -84,12 +84,12 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase">
+                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
                       Quality Guaranteed
                     </span>
                   </span>
                 </h3>
-                <p>
+                <p className="pl-2">
                   Our skilled technicians bring years of experience and
                   specialized knowledge to ensure precise, reliable repairs for
                   your devices.
@@ -101,12 +101,12 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase">
+                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
                       Passionate Team
                     </span>
                   </span>
                 </h3>
-                <p>
+                <p className="pl-2">
                   Our skilled technicians bring years of experience and
                   specialized knowledge to ensure precise, reliable repairs for
                   your devices.
