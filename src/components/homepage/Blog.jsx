@@ -17,7 +17,7 @@ const Blog = () => {
               OUR BLOG
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-			<p className="font-serif text-4xl font-bold dark:text-gray-600">The Digital Pulse: News & <br /> Updates</p>
+			<p className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">The Digital Pulse: News & Updates</p>
 		</div>
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
 			<article className="border border-orange-600 rounded-xl flex flex-col dark:bg-gray-50 dancing-up imageHover">

@@ -19,7 +19,7 @@ const Gallery = () => {
                 OUR GALLERY
                 <Image src={icon1} width={40} height={40} alt="icon" />
               </p>
-            <h1 className="text-4xl text-center font-bold py-6">Digital Delights: Journey <br /> Through Our Gallery</h1>
+            <h1 className="text-4xl mx-auto w-full lg:w-5/12 text-center font-bold py-6">Digital Delights: Journey Through Our Gallery</h1>
             
             <div className="grid grid-cols-8 gap-4 ">
                 <div className="main-container col-span-8 lg:col-span-4">

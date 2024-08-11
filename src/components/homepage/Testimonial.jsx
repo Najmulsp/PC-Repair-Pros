@@ -22,8 +22,8 @@ const Testimonial = () => {
               TESTIMONIALS
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-            <h1 className="text-center text-white text-4xl font-bold">
-              Success Stories: From Our <br /> Client’s Perspective
+            <h1 className="text-center mx-auto w-full lg:w-6/12 text-white text-4xl font-bold">
+              Success Stories: From Our Client’s Perspective
             </h1>
           </div>
 

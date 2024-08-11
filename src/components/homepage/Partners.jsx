@@ -16,7 +16,7 @@ const Partners = () => {
               PARTNERS
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-		<p className="text-4xl font-bold dark:text-gray-600">Proudly Backed By Years of <br /> Trusted Service</p>
+		<p className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Proudly Backed By Years of  Trusted Service</p>
 	</div>
 	<div className="container pt-10 pb-16 mx-auto flex flex-wrap justify-around gap-4 ">
 		<div className="">
