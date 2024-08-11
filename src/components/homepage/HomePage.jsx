@@ -1,5 +1,6 @@
 import AboutUs from "./AboutUs";
 import Banner from "./Banner";
+import Blog from "./Blog";
 import Gallery from "./Gallery";
 import GetShedule from "./GetShedule";
 import Services from "./Services";
@@ -18,6 +19,7 @@ const HomePage = () => {
             <WhyChoose></WhyChoose>
             <Gallery></Gallery>
             <Testimonial></Testimonial>
+            <Blog></Blog>
         </div>
     );
 };

@@ -21,10 +21,10 @@ const Register = () => {
 			}
 		})
     }
-	console.log(res);
-	if(res.status === 200){
-		e.target.reset()
-	}
+	// console.log(res);
+	// if(res.status === 200){
+	// 	e.target.reset()
+	// }
 
 
     return (

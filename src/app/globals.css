@@ -143,7 +143,7 @@ body {
   height: 100%;
   border-radius: 9999px;
   transition: width .3s ease-in-out;
-  background-color: rgb(111, 91, 65);
+  background-color: #0D003B;
   z-index: -1;
 }
 
@@ -243,3 +243,34 @@ position: relative;
   width: 100%;
   height: 100%;
 }
+            /* blog card gradient border */
+.gradientBorder{
+  background: linear-gradient(#1a1936, #1a1936) padding-box, linear-gradient(45deg, #8884ff 0%, #8884ff 100%) border-box;
+}
+.dancing-up{
+  transition: .5s ease-in-out;
+}
+.dancing-up:hover{
+  transform: translateY(-10px);
+}
+        /* blog image hover effect */
+.roundHover{
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    transition: all .3s ease-in-out;
+}
+
+.imageHover:hover .roundHover{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.roundHover2{
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    transition: all .3s ease-in-out;
+}
+.imageHover:hover .roundHover2{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
