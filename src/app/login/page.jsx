@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import loginLogo from "../../../public/assets/logo/computer-repair115.webp"
+import loginLogo from "../../../public/assets/logo/login logo.png"
 import Link from "next/link";
 
 const Login = () => {
@@ -13,46 +13,38 @@ const Login = () => {
 
     return (
         <div>
-                                {/* upper banner */}
-            <div className="p-6 py-12 dark:bg-violet-600 dark:text-gray-50">
-	<div className="container mx-auto">
-		<div className="flex flex-col lg:flex-row items-center justify-between">
-			<h2 className="text-center text-6xl tracking-tighter font-bold">Up to
-				<br  className="sm:hidden" />50% Off
-			</h2>
-			<div className="space-x-2 text-center py-2 lg:py-0">
-				<span>Plus free shipping! Use code:</span>
-				<span className="font-bold text-lg">MAMBA</span>
-			</div>
-			<a href="#" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 dark:border-gray-600">Shop Now</a>
-		</div>
-	</div>
-</div>
-                            {/* login section */}
-            <section className="dark:bg-gray-100 dark:text-gray-800">
+                             {/* login section */}
+            <section
+			style={{
+				backgroundImage: `url('/assets/background/bg image.webp')`,
+				backgroundRepeat: "no-repeat", backgroundSize: "cover",
+			  }}
+			className=" dark:text-gray-800"
+			>
+
 	<div className="container flex flex-col justify-center items-center ite p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<Image src={loginLogo} height={600} width={600} alt="login logo" className="rounded-md"/>
+			<Image src={loginLogo} height={600} width={600} alt="login logo" className=""/>
 		</div>
 
-		<div className="w-full max-w-md mr-6 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+		<div className="w-full max-w-md mr-6 p-8 space-y-3 border border-orange-500 rounded-xl  text-white">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
-    <p className="text-sm text-center dark:text-gray-600">Login to access your account</p>
+    <p className="text-sm text-center ">Login to access your account</p>
 	<form onSubmit={handleLogin} noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">
-			<label htmlFor="useremail" className="block dark:text-gray-600">Email</label>
-			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+			<label htmlFor="useremail" className="block ">Email</label>
+			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent focus:border-orange-600" />
 		</div>
 		<div className="space-y-1 text-sm">
-			<label htmlFor="password" className="block dark:text-gray-600">Password</label>
-			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+			<label htmlFor="password" className="block ">Password</label>
+			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent  focus:border-gray-600" />
 			
 		</div>
 		<button type="submit" className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50">Login</button>
 	</form>
 	<div className="flex items-center pt-4 space-x-1">
 		<div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
-		<p className="px-3 text-sm dark:text-gray-600">Login with social accounts</p>
+		<p className="px-3 text-sm ">Login with social accounts</p>
 		<div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
 	</div>
 	<div className="flex justify-center space-x-4">
@@ -67,8 +59,8 @@ const Login = () => {
 			</svg>
 		</button>
 	</div>
-	<p className="text-xs text-center sm:px-6 dark:text-gray-600">Don't have an account?
-		<Link rel="noopener noreferrer" href="/register" className="underline dark:text-gray-800">Register</Link>
+	<p className="text-xs text-center sm:px-6 ">Don't have an account?
+		<Link rel="noopener noreferrer" href="/register" className="font-bold underline "> Register</Link>
 	</p>
 </div>
 	</div>

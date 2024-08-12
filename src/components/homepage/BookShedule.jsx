@@ -1,11 +1,11 @@
 import Image from "next/image";
-import service1 from "../../../public/assets/about section/about-us-4.webp";
+import service1 from "../../../public/assets/about section/about-us-4.1.png";
 import icon1 from "../../../public/assets/logo/shape-16.png";
 
 const BookShedule = () => {
     return (
         <div>
-            <section className=" p-10 dark:bg-gray-100 dark:text-gray-800">
+            <section className=" p-10 bg-gray-100  dark:text-gray-800">
 			<div className="space-y-2 text-center py-6">
         <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
               <Image src={icon1} width={40} height={40} alt="icon" />

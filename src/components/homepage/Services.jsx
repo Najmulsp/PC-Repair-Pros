@@ -47,7 +47,7 @@ const Services = () => {
   return (
     <div className="">
       
-      <section className="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+      <section className="py-6 sm:py-12 bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF] dark:text-gray-800">
 	<div className="container p-6 mx-auto space-y-8">
 		<div className="space-y-2 text-center">
         <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">

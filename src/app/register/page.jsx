@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import registerLogo from "../../../public/assets/logo/laptop repair img 5 .jpg"
+import registerLogo from "../../../public/assets/logo/register logo.png"
 import Link from "next/link";
 
 const Register = () => {
@@ -13,14 +13,15 @@ const Register = () => {
         const  password = e.target.password.value;
         const newUser={name, email, password}
         console.log(newUser)
-		const res = await fetch("http://localhost:3000/register/api", {
+		const res = await fetch("/api/register", {
 			method: "POST",
 			body: JSON.stringify(newUser),
 			headers: {
-				"content-type" : "application/json"
+			  "Content-Type": "application/json"
 			}
-		})
+		  });
     }
+	
 	// console.log(res);
 	// if(res.status === 200){
 	// 	e.target.reset()
@@ -29,50 +30,40 @@ const Register = () => {
 
     return (
         <div>
-                                {/* upper banner */}
-            <div className="p-6 py-12 dark:bg-violet-600 dark:text-gray-50">
-	<div className="container mx-auto">
-		<div className="flex flex-col lg:flex-row items-center justify-between">
-			<h2 className="text-center text-6xl tracking-tighter font-bold">Up to
-				<br  className="sm:hidden" />50% Off
-			</h2>
-			<div className="space-x-2 text-center py-2 lg:py-0">
-				<span>Plus free shipping! Use code:</span>
-				<span className="font-bold text-lg">MAMBA</span>
-			</div>
-			<a href="#" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 dark:border-gray-600">Shop Now</a>
-		</div>
-	</div>
-</div>
-                            {/* Register section */}
-            <section className="dark:bg-gray-100 dark:text-gray-800">
+                          {/* Register section */}
+            <section
+			style={{
+				backgroundImage: `url('/assets/background/bg image.webp')`,
+				backgroundRepeat: "no-repeat", backgroundSize: "cover",
+			  }}
+			className=" dark:text-gray-800">
 	<div className="container flex flex-col justify-center items-center ite p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<Image src={registerLogo} height={500} width={500} alt="Register logo" className="rounded-lg"/>
+			<Image src={registerLogo} height={500} width={500} alt="Register logo" className=""/>
 		</div>
 
-		<div className="w-full max-w-md mr-6 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+		<div className="w-full max-w-md mr-6 p-8 mb-10 space-y-3 rounded-xl border border-orange-500 text-white">
 	<h1 className="text-2xl font-bold text-center">Register</h1>
-    <p className="text-sm text-center dark:text-gray-600">Register to access your account</p>
+    <p className="text-sm text-center">Register to access your account</p>
 	<form onSubmit={handleRegister} noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">
-			<label htmlFor="username" className="block dark:text-gray-600">Name</label>
-			<input type="text" name="name" id="name" placeholder="Your Name" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+			<label htmlFor="username" className="block ">Name</label>
+			<input type="text" name="name" id="name" placeholder="Your Name" className="w-full px-4 py-3 border rounded-md border-orange-300  bg-transparent focus:border-orange-600" />
 		</div>
 		<div className="space-y-1 text-sm">
-			<label htmlFor="User Email" className="block dark:text-gray-600">Email</label>
-			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+			<label htmlFor="User Email" className="block ">Email</label>
+			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent focus:border-orange-600" />
 		</div>
 		<div className="space-y-1 text-sm">
-			<label htmlFor="password" className="block dark:text-gray-600">Password</label>
-			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+			<label htmlFor="password" className="block ">Password</label>
+			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent focus:border-orange-600" />
 			
 		</div>
 		<button type="submit" className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50">Register</button>
 	</form>
 	<div className="flex items-center pt-4 space-x-1">
 		<div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
-		<p className="px-3 text-sm dark:text-gray-600">Login with social accounts</p>
+		<p className="px-3 text-sm ">Login with social accounts</p>
 		<div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
 	</div>
 	<div className="flex justify-center space-x-4">
@@ -87,8 +78,8 @@ const Register = () => {
 			</svg>
 		</button>
 	</div>
-	<p className="text-xs text-center sm:px-6 dark:text-gray-600">Already have an account?
-		<Link rel="noopener noreferrer" href="/login" className="underline dark:text-gray-800">Login</Link>
+	<p className="text-xs text-center sm:px-6">Already have an account?
+		<Link rel="noopener noreferrer" href="/login" className="underline font-bold"> Login</Link>
 	</p>
 </div>
 	</div>
