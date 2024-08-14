@@ -24,6 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    scroll-behavior:smooth;
 }
 
 @layer utilities {
@@ -99,6 +100,11 @@ body {
   }
 }
 
+#rotateNavIcon{
+  -webkit-animation: spin 12s linear infinite;
+  -moz-animation: spin 12s linear infinite;
+  animation: spin 12s linear infinite;
+}
 #rotateStar1{
   -webkit-animation: spin 12s linear infinite;
   -moz-animation: spin 12s linear infinite;

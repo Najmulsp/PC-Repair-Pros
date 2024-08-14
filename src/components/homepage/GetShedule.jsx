@@ -1,9 +1,8 @@
 import { LuPhoneCall } from "react-icons/lu";
-// import shape1 from "../../../public/assets/background/shape-4.png";
-// import shape2 from "../../../public/assets/background/shape-5.png";
+import shape1 from "../../../public/assets/logo/sun logo .png";
 import { GiStarShuriken } from "react-icons/gi";
-import { GiBoomerangSun } from "react-icons/gi";
 import { FcQuestions } from "react-icons/fc";
+import Image from "next/image";
 
 
 const GetShedule = () => {
@@ -15,8 +14,8 @@ const GetShedule = () => {
       }}
       className="relative w-10/12 mx-auto  min-h-[520px] rounded-xl my-12 bg-blue-950"
     >
+      <Image id="rotateStar2" className="absolute right-10 top-2 text-6xl text-orange-100 hover:text-orange-400" src={shape1} width={80} height={80} alt="icon" />
       <GiStarShuriken  id="rotateStar1" className="absolute left-10 lg:left-20 bottom-10 lg:bottom-20 text-7xl text-blue-100 hover:text-blue-400"/> 
-      <GiBoomerangSun id="rotateStar2" className="absolute right-10 top-2 text-6xl text-orange-100 hover:text-orange-400"/>
       <div
         style={{
           backgroundImage: `url(/assets/background/shape-5.png)`,

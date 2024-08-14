@@ -11,6 +11,7 @@ import { FaStarHalfAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import icon1 from "../../../public/assets/logo/shape-16.png";
 import icon2 from "../../../public/assets/logo/shape-15.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -136,7 +137,7 @@ const Footer = () => {
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end justify-center items-center">
         Terms & Conditions | Privacy Policy
-        <PiMonitorArrowUpFill className="text-4xl text-[#F15523]"/>
+        <Link href="#myHeader"><PiMonitorArrowUpFill className="text-4xl text-[#F15523]"/></Link>
         </nav>
       </footer>
     </div>

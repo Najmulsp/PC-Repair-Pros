@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <>
       {/* first navbar */}
-      <header className="p-4 dark:bg-gray-100 flex flex-col lg:gap-16 lg:flex-row justify-between  dark:text-gray-800">
+      <header id="myHeader" className="p-4 dark:bg-gray-100 flex flex-col lg:gap-16 lg:flex-row justify-between  dark:text-gray-800">
         <div className="container flex justify-between h-16 mx-auto">
           {/* location card 1 */}
           <div className="hidden sm:block ">
@@ -126,6 +126,7 @@ const Navbar = () => {
           </div>
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-serif">
             <Image
+              id="rotateNavIcon"
               height={30}
               width={30}
               alt="PC Repair Logo"

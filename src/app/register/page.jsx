@@ -13,7 +13,7 @@ const Register = () => {
         const  password = e.target.password.value;
         const newUser={name, email, password}
         console.log(newUser)
-		const res = await fetch("/api/register", {
+		const res = await fetch("/register/api", {
 			method: "POST",
 			body: JSON.stringify(newUser),
 			headers: {
