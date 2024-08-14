@@ -1,6 +1,3 @@
-
-
-
 import mongoose from "mongoose";
 
 const connectDB = async() =>{
@@ -13,23 +10,6 @@ const connectDB = async() =>{
 };
 
 export default connectDB;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // import { MongoClient, ServerApiVersion } from "mongodb";

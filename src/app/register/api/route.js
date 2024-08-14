@@ -31,9 +31,6 @@ export const POST = async(request) =>{
         return Response.json({message: "Something Went Wrong"}, {status: 500});
     }
 }
-
-
-
 // export const POST = async (request) => {
 //     const newUser = await request.json();
 //     try {
