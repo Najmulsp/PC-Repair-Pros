@@ -133,7 +133,7 @@ const Footer = () => {
       <footer className="footer bg-[#4A416B] text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
           
-          <p>Copyright © {new Date().getFullYear()} PC Repair Pros - All right reserved by <span className="text-red-400">EnvyTheme</span></p>
+          <p>Copyright © {new Date().getFullYear()} PC Repair Pros - All right reserved by <span className="text-red-400">Md Najmul</span></p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end justify-center items-center">
         Terms & Conditions | Privacy Policy
