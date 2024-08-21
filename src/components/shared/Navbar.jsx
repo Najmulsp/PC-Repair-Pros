@@ -1,3 +1,4 @@
+"use client";
 import { CiLocationOn } from "react-icons/ci";
 import { LuPhoneCall } from "react-icons/lu";
 import { SiTimescale } from "react-icons/si";
@@ -8,8 +9,11 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import logo from "../../../public/logo-black.png";
 import Image from "next/image";
 import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
+  const session = useSession();
+  console.log(session)
   const navItems = (
     <>
       <li>
@@ -141,9 +145,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link href={"/login"}><button className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+          {
+            session?
+            <button onClick={() => signOut()} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            Logout
+            </button>
+            :
+            <Link href={"/login"}><button className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Login
           </button></Link>
+          }
         </div>
       </div>
     </>

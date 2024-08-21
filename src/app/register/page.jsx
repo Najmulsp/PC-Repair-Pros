@@ -2,6 +2,7 @@
 import Image from "next/image";
 import registerLogo from "../../../public/assets/logo/register logo.png"
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 const Register = () => {
 
@@ -20,12 +21,20 @@ const Register = () => {
 			  "Content-Type": "application/json"
 			}
 		  });
+		  console.log(res);
+		if(res.status === 200){
+			Swal.fire({
+				position: "top-end",
+				icon: "success",
+				title: "User has been created successfully",
+				showConfirmButton: false,
+				timer: 1500
+			  });
+		e.target.reset()
+		}
     }
 	
-	// console.log(res);
-	// if(res.status === 200){
-	// 	e.target.reset()
-	// }
+	
 
 
     return (

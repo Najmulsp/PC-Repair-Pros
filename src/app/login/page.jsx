@@ -1,14 +1,35 @@
 "use client";
 import Image from "next/image";
-import loginLogo from "../../../public/assets/logo/login logo.png"
+import loginLogo from "../../../public/assets/logo/login logo.png";
+import { signIn } from "next-auth/react";
 import Link from "next/link";
+import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
+
 
 const Login = () => {
-
+	const router = useRouter();
     const handleLogin = async () =>{
         e.preventDefault();
-
-    }
+		const email = e.target.email.value;
+		const password = e.target.password.value;
+		const res = await signIn("credentials", {
+			email,
+			password,
+			redirect : false
+		});
+		if(res.status === 200){
+			Swal.fire({
+				position: "top-end",
+				icon: "success",
+				title: "Yor have successfully logged in",
+				showConfirmButton: false,
+				timer: 1500
+			  });
+			  router.push('/');
+			console.log(res)
+		}
+    };
 
 
     return (
@@ -30,7 +51,7 @@ const Login = () => {
 		<div className="w-full max-w-md mr-6 p-8 space-y-3 border border-orange-500 rounded-xl  text-white">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
     <p className="text-sm text-center ">Login to access your account</p>
-	<form onSubmit={handleLogin} noValidate="" action="" className="space-y-6">
+	<form onSubmit={handleLogin}  className="space-y-6">
 		<div className="space-y-1 text-sm">
 			<label htmlFor="useremail" className="block ">Email</label>
 			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent focus:border-orange-600" />
