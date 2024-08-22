@@ -55,7 +55,7 @@ const Services = () => {
               OUR SERVICES
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-			<p className=" text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Fast and Reliable Repairs fo Every Need</p>
+			<p className=" text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Fast and Reliable Repairs of Every Need</p>
 		</div>
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
     <div className="my-card max-w-xs border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">

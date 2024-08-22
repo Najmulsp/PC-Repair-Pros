@@ -12,8 +12,9 @@ import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
-  const session = useSession();
+  const {session} = useSession();
   console.log(session)
+
   const navItems = (
     <>
       <li>
@@ -145,16 +146,34 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {
+          {/* {
             session?
-            <button onClick={() => signOut()} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Logout
             </button>
             :
-            <Link href={"/login"}><button className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            Login
+          </button></Link>
+          } */}
+          {
+            session?.status === "loading" &&
+            <h6>Loading...</h6>
+          }
+          {
+            session?.status === "unauthenticated" &&
+            <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Login
           </button></Link>
           }
+          {
+            session?.status === "authenticated" &&
+            <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            Logout
+            </button>
+          }
+
+          
         </div>
       </div>
     </>
