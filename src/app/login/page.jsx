@@ -6,9 +6,11 @@ import Link from "next/link";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import SocialLogin from "@/components/shared/SocialLogin";
-
+import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
+import { useState } from "react";
 
 const Login = () => {
+	const [showPassword, setShowPassword] = useState(false);
 	const router = useRouter();
     const handleLogin = async () =>{
         e.preventDefault();
@@ -57,10 +59,19 @@ const Login = () => {
 			<label htmlFor="useremail" className="block ">Email</label>
 			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent focus:border-orange-600" />
 		</div>
-		<div className="space-y-1 text-sm">
+		<div className="relative space-y-1 text-sm">
 			<label htmlFor="password" className="block ">Password</label>
-			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent  focus:border-gray-600" />
-			
+			<input type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Password" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent  focus:border-gray-600" />
+			<span
+                className="text-2xl absolute top-8 right-8"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? (
+                  <IoEyeOutline></IoEyeOutline>
+                ) : (
+                  <IoEyeOffOutline />
+                )}
+              </span>
 		</div>
 		<button type="submit" className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50">Login</button>
 	</form>
