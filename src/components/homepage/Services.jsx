@@ -30,10 +30,10 @@ const Services =  () => {
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
     {
       services?.map((service) =>
-        <div key={service._id} className="my-card box-border max-h-[510px] max-w-xs mx-auto border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">
+        <div key={service._id} className="my-card box-border max-w-xs mx-auto border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">
         <div className="min-h-52 relative">
         <div className="cardImage min-h-52 border w-fit">
-        <Image src={service.image} alt="Service Image" width="500" height="500" className="object-cover"></Image>
+        <Image src={service.image} alt="Service Image" width="500" height="500" className="object-cover" />
         </div>
         <FaWrench className="absolute left-36 -bottom-5 text-2xl transition-all delay-75 rounded-full hover:bg-rose-500  bg-red-100 w-10 h-10 mt-3 p-2 hover:text-white text-rose-500"/>
         </div>
@@ -46,7 +46,7 @@ const Services =  () => {
             {service.description.slice(0,150)}...
             </p>
           </div>
-          <Link href={`/serviceDetails/${service._id}`}>
+          <Link href={`/services/${service._id}`}>
           <button
             type="button"
             className="btn flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gradient-to-r from-[#f2b076] to-[#f24004] dark:text-gray-50"
