@@ -12,15 +12,18 @@ import { useState } from "react";
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
 	const router = useRouter();
-    const handleLogin = async () =>{
+
+    const handleLogin = async (e) =>{
         e.preventDefault();
 		const email = e.target.email.value;
 		const password = e.target.password.value;
+		console.log(email, password)
 		const res = await signIn("credentials", {
 			email,
 			password,
-			redirect : false
+			redirect : false,
 		});
+
 		if(res.status === 200){
 			Swal.fire({
 				position: "top-end",
@@ -48,7 +51,7 @@ const Login = () => {
 
 	<div className="container flex flex-col justify-center items-center ite p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<Image src={loginLogo} height={600} width={600} alt="login logo" className=""/>
+			<Image src={loginLogo} height={600} width={600} alt="login logo" />
 		</div>
 
 		<div className="w-full max-w-md mr-6 p-8 space-y-3 border border-orange-500 rounded-xl  text-white">
@@ -56,7 +59,7 @@ const Login = () => {
     <p className="text-sm text-center ">Login to access your account</p>
 	<form onSubmit={handleLogin}  className="space-y-6">
 		<div className="space-y-1 text-sm">
-			<label htmlFor="useremail" className="block ">Email</label>
+			<label htmlFor="user email" className="block ">Email</label>
 			<input type="email" name="email" id="email" placeholder="Your Email" className="w-full px-4 py-3 border rounded-md border-orange-300 bg-transparent focus:border-orange-600" />
 		</div>
 		<div className="relative space-y-1 text-sm">

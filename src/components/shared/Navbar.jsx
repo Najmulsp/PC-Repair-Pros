@@ -11,9 +11,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 
+
 const Navbar = () => {
-  const {session} = useSession();
-  console.log(session)
+  const { data: session, status } = useSession();
+  console.log(session);
 
   const navItems = (
     <>
@@ -37,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       {/* first navbar */}
-      <header id="myHeader" className="p-4 dark:bg-gray-100 flex flex-col lg:gap-16 lg:flex-row justify-between  dark:text-gray-800">
+      <header id="myHeader" className="p-4  dark:bg-gray-100 flex flex-col lg:gap-16 lg:flex-row justify-between  dark:text-gray-800">
         <div className="container flex justify-between h-16 mx-auto">
           {/* location card 1 */}
           <div className="hidden sm:block ">
@@ -103,7 +104,7 @@ const Navbar = () => {
         </div>
       </header>
       {/* second navbar */}
-      <div className="navbar sticky z-10 max-w-7xl bg-white text-black">
+      <div className="navbar sticky z-10 max-w-7xl  bg-white text-black ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -146,7 +147,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {/* {
+       
+          {
             session?
             <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Logout
@@ -155,24 +157,23 @@ const Navbar = () => {
             <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Login
           </button></Link>
-          } */}
-          {
+          }
+          {/* {
             session?.status === "loading" &&
             <h6>Loading...</h6>
-          }
-          {
-            session?.status === "unauthenticated" &&
+          } */}
+          {/* {
+            // session?.status === "unauthenticated" &&
             <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Login
           </button></Link>
           }
-          {
+           {
             session?.status === "authenticated" &&
             <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Logout
             </button>
-          }
-
+          }  */}
           
         </div>
       </div>

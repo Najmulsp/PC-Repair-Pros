@@ -14,7 +14,7 @@ const Services =  () => {
       .then(data => setServices(data))
       .catch(error => console.log(error))
     },[])
-    console.log(services)
+    // console.log(services)
   return (
     <>
       <section className="py-6 sm:py-12 bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF] dark:text-gray-800">

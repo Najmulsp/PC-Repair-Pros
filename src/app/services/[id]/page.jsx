@@ -1,13 +1,15 @@
+
 import banner2 from "../../../../public/assets/banner/details page image1.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 import { getServiceDetails } from "@/app/session/getServices";
 
-const ServiceDetails = async(params) => {
+const ServiceDetails = async({params}) => {
     
     const details = await getServiceDetails(params._id)
-    console.log(details.length)
+    console.log(details)
+
   return (
     <div className="container mx-auto mt-10 h-content">
       <div className="relative w-full max-h-96  bg-gradient-to-r from-slate-950 to-gray-950 border">
@@ -27,7 +29,7 @@ const ServiceDetails = async(params) => {
       <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-6 border">
         <div className="lg:col-span-2 col-span-1 border">
           <div className="bg-gray-900">
-          <Image src={details.image} alt="Service Image" width={600} height={400} className="" />
+          {/* <Image src={details.image} alt="Service Image" width={600} height={400} className="" /> */}
             {/* <img
               className="w-full h-96 rounded-lg opacity-65   border"
               src={service.img}
@@ -36,7 +38,7 @@ const ServiceDetails = async(params) => {
           </div>
         </div>
         <div className="col-span-1">
-          <div className="bg-orange-100 ">
+          <div className="bg-orange-50 ">
             <div className="p-8 space-y-4">
               <h1 className="text-2xl font-bold">Services</h1>
               <p className="bg-blue-950 text-white p-4 flex justify-between items-center">
