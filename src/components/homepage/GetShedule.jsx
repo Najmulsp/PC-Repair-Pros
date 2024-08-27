@@ -1,36 +1,24 @@
 import { LuPhoneCall } from "react-icons/lu";
+import bgImg from "../../../public/assets/background/GetAShedule.png";
 import shape1 from "../../../public/assets/logo/sun logo .png";
 import shape2 from "../../../public/assets/logo/shape-7.png";
-import { GiStarShuriken } from "react-icons/gi";
+
 import { FcQuestions } from "react-icons/fc";
 import Image from "next/image";
 
 
 const GetShedule = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(/assets/background/shape-4.png)`,
-        backgroundRepeat: "no-repeat",
-      }}
-      className="relative w-10/12 mx-auto  min-h-[520px] rounded-xl my-12 bg-blue-950"
-    >
-      <Image id="rotateStar2" className="absolute right-10 top-2 text-6xl text-orange-100 hover:text-orange-400" src={shape1} width={80} height={80} alt="icon" />
-      <Image id="rotateStar1"  className="absolute left-10 lg:left-20 bottom-10 lg:bottom-20 text-7xl text-blue-100 hover:text-blue-400" src={shape2} width={80} height={80} alt="icon"/> 
-      {/* <GiStarShuriken  id="rotateStar1" className="absolute left-10 lg:left-20 bottom-10 lg:bottom-20 text-7xl text-blue-100 hover:text-blue-400"/>  */}
-      <div
-        style={{
-          backgroundImage: `url(/assets/background/shape-5.png)`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-        className="absolute right-0 top-5 lg:w-[500px] min-h-[450px]  my-12 bg-blue-950"
-      ></div>
+    <div className="relative" >
+        <Image  className=" mx-auto" src={bgImg} width={1150} height={400} alt="bg image" />
+      <Image id="rotateStar2" className="absolute right-12  lg:right-24 top-3 text-6xl text-orange-100 hover:text-orange-400" src={shape1} width={80} height={80} alt="icon" />
+      <Image id="rotateStar1"  className="absolute left-10 lg:left-24 bottom-10 lg:bottom-8 text-7xl text-blue-100 hover:text-blue-400" src={shape2} width={80} height={80} alt="icon"/> 
+      
 
-      <h1 className="absolute w-4/5  mx-auto text-2xl lg:text-5xl font-bold text-white left-12 lg:left-24 text-center leading-[30px] lg:leading-[60px] mt-20 z-10">
+      <h1 className="absolute w-4/5 top-10  mx-auto text-2xl lg:text-4xl font-bold text-white left-12 lg:left-24 text-center leading-[30px] lg:leading-[60px] mt-0 ">
         We Repair, You Relax. Click Below and Lets Fix Your Devices!
       </h1>
-      <div className="flex justify-center items-center gap-4 lg:gap-6 flex-col lg:flex-row  px-4  w-full lg:w-auto lg:space-x-3 mt-44 lg:mt-60 absolute lg:left-44">
+      <div className="flex justify-center items-center gap-4 lg:gap-6 flex-col lg:flex-row  px-4  w-full lg:w-auto lg:space-x-3 top-48 absolute lg:left-44">
         
 
         <div className="flex  gap-2 justify-center items-center">

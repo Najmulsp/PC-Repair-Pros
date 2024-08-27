@@ -10,7 +10,7 @@ import { GiStarShuriken } from "react-icons/gi";
 
 const Gallery = () => {
     return (
-        <div className="bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF]">
+        <div className="bg-white dark:bg-slate-900 text-gray-800 dark:text-white">
             <div className="max-w-6xl py-6 pb-12 mx-auto ">
 
             

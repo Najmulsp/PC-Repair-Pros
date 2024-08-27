@@ -21,7 +21,7 @@ const Services =  () => {
     // console.log(services)
   return (
     <>
-      <section className="py-6 sm:py-12 bg-gradient-to-r from-[#FEF8F7] to-[#F6F7FF] dark:text-gray-800">
+      <section className="py-6 sm:py-12 bg-white dark:bg-slate-900 text-gray-700 dark:text-white">
 	<div className="container p-6 mx-auto space-y-8">
 		<div className="space-y-2 text-center">
         <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">

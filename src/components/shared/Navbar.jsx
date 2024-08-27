@@ -10,11 +10,12 @@ import logo from "../../../public/logo-black.png";
 import Image from "next/image";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
-
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const { data: session, status } = useSession();
-  console.log(session);
+  const { resolvedTheme, theme, setTheme } = useTheme()
+
 
   const navItems = (
     <>
@@ -38,7 +39,7 @@ const Navbar = () => {
   return (
     <>
       {/* first navbar */}
-      <header id="myHeader" className="p-4  dark:bg-gray-100 flex flex-col lg:gap-16 lg:flex-row justify-between  dark:text-gray-800">
+      <header id="myHeader" className="p-4 bg-gray-100 dark:bg-slate-900 text-gray-800 dark:text-white flex flex-col lg:gap-16 lg:flex-row justify-between ">
         <div className="container flex justify-between h-16 mx-auto">
           {/* location card 1 */}
           <div className="hidden sm:block ">
@@ -104,7 +105,7 @@ const Navbar = () => {
         </div>
       </header>
       {/* second navbar */}
-      <div className="navbar sticky z-10 max-w-7xl  bg-white text-black ">
+      <div className="navbar sticky z-10 max-w-7xl  bg-white dark:bg-gray-700 text-gray-800 dark:text-white ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -147,7 +148,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-       
+        <button
+        className="text-2xl mr-6"
+        onClick={() =>{
+          setTheme(resolvedTheme === "light" ? "dark" : "light")
+        }}
+        >
+          {theme === "light" ? "🌙" : "🔆"}
+        </button>
           {
             session?
             <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">

@@ -10,7 +10,7 @@ const WhyChoose = () => {
   return (
     <div>
       {/* upper text container */}
-      <div className="p-6 py-12 bg-[#FFFFFF]">
+      <div className="p-6 py-12 bg-white dark:bg-zinc-900 text-gray-800 dark:text-white">
         <div className="container mx-auto">
           <div className="flex items-center lg:items-start gap-6">
             <div className="text-center lg:text-left  mx-auto lg:mx-0">
@@ -37,7 +37,7 @@ const WhyChoose = () => {
         </div>
       </div>
       {/* lower grid section */}
-      <section className="px-5 py-10 bg-[#FFFFFF]">
+      <section className="px-5 py-10 bg-white dark:bg-zinc-900 text-gray-800 dark:text-white">
         <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
           {/* text div1 */}
           <div className="flex flex-col justify-between col-span-12 lg:col-span-4  py-2 space-y-8 md:space-y-16 ">
@@ -48,7 +48,7 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
+                    <span className="text-xl font-bold tracking-wider uppercase pl-2">
                         Exceptional Expertise
                     </span>
                   </span>
@@ -66,7 +66,7 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
+                    <span className="text-xl font-bold tracking-wider uppercase pl-2">
                       Customer-Centric Approach
                     </span>
                   </span>
@@ -84,7 +84,7 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
+                    <span className="text-xl font-bold tracking-wider uppercase pl-2">
                       Quality Guaranteed
                     </span>
                   </span>
@@ -101,7 +101,7 @@ const WhyChoose = () => {
                     <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
                       <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
                     </span>
-                    <span className="text-xl text-black font-bold tracking-wider uppercase pl-2">
+                    <span className="text-xl font-bold tracking-wider uppercase pl-2">
                       Passionate Team
                     </span>
                   </span>

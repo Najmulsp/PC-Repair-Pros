@@ -9,7 +9,7 @@ import partner5 from "../../../public/assets/partner/partner-5.png";
 const Partners = () => {
     return (
         <div>
-            <section className=" dark:bg-gray-100 px-6 lg:px-0 dark:text-gray-800">
+            <section className=" bg-white dark:bg-zinc-900 text-gray-800 dark:text-white px-6 lg:px-0 ">
 	<div className="container mx-auto p-4  space-y-2 text-center">
     <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
               <Image src={icon1} width={40} height={40} alt="icon" />
