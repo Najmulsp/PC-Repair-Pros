@@ -7,7 +7,10 @@ import AuthProvider from "./session/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PC Repair Pros",
+  title: {
+    default: "PC Repair Pros",
+    template: "%s | PC Repair Pros"
+  },
   description: "Computer Repair Services Workshop",
 };
 

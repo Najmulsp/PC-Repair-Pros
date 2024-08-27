@@ -5,6 +5,10 @@ import icon1 from "../../../public/assets/logo/shape-16.png";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+export const metadata = {
+  title: "Details",
+  description : "Service Details Page"
+}
 
 const Services =  () => {
   const [services, setServices] = useState([]);
