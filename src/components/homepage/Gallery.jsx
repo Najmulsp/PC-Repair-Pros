@@ -6,7 +6,7 @@ import gallery4 from "../../../public/assets/gallery/gallery-4.webp";
 import gallery5 from "../../../public/assets/gallery/gallery-5.webp";
 import gallery6 from "../../../public/assets/gallery/gallery-6.webp";
 import icon1 from "../../../public/assets/logo/shape-16.png";
-import { GiStarShuriken } from "react-icons/gi";
+import { IoMdSearch } from "react-icons/io";
 
 const Gallery = () => {
     return (
@@ -25,37 +25,37 @@ const Gallery = () => {
                 <div className="main-container col-span-8 lg:col-span-4">
                 <Image src={gallery1} width={700} height={700} alt="galley image1" className="image rounded-xl"/>
                     <div className="overlay">
-                    <GiStarShuriken className="text-4xl"/>
+                    <IoMdSearch className="text-4xl ml-56 lg:ml-64"/>
                     </div>
                 </div>
                 <div className="main-container col-span-8 lg:col-span-2">
                 <Image src={gallery2} width={400} height={400} alt="galley image2" className="image rounded-xl"/>
                     <div className="overlay">
-                    <GiStarShuriken className="text-4xl"/>
+                    <IoMdSearch className="text-4xl ml-56 lg:ml-32"/>
                     </div>
                 </div>
                 <div className="main-container col-span-8 lg:col-span-2">
                 <Image src={gallery3} width={400} height={400} alt="galley image3" className="image rounded-xl"/>
                     <div className="overlay">
-                    <GiStarShuriken className="text-4xl"/>
+                    <IoMdSearch className="text-4xl ml-56 lg:ml-32"/>
                     </div>
                 </div>
                 <div className="main-container col-span-8 lg:col-span-2">
                 <Image src={gallery4} width={400} height={400} alt="galley image4" className="image rounded-xl"/>
                     <div className="overlay">
-                    <GiStarShuriken className="text-4xl"/>
+                    <IoMdSearch className="text-4xl ml-56 lg:ml-32" />
                     </div>
                 </div>
                 <div className="main-container col-span-8 lg:col-span-2">
                 <Image src={gallery5} width={400} height={400} alt="galley image5" className="image rounded-xl"/>
                     <div className="overlay">
-                    <GiStarShuriken className="text-4xl"/>
+                    <IoMdSearch className="text-4xl ml-56 lg:ml-32"/>
                     </div>
                 </div>
                 <div className="main-container col-span-8 lg:col-span-4">
                 <Image src={gallery6} width={700} height={700} alt="galley image6" className="image rounded-xl"/>
                     <div className="overlay">
-                    <GiStarShuriken className="text-4xl"/>
+                    <IoMdSearch className="text-4xl ml-56 lg:ml-64"/>
                     </div>
                 </div>
             </div>

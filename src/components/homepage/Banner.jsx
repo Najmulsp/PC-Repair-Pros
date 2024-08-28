@@ -10,8 +10,6 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// import './styles.css';
-// import '../path/to/styles.css';
 
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
@@ -75,7 +73,7 @@ const Banner = () => {
         <SwiperSlide>
           <Image
             id="foranimation2"
-            class="zoom-in"
+            // class="zoom-in"
             src={banner2}
             alt="Banner Image"
             width="1600"

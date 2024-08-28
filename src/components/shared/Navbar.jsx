@@ -5,6 +5,7 @@ import { SiTimescale } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { BsFillMoonFill } from "react-icons/bs";
 import { TiSocialLinkedin } from "react-icons/ti";
 import logo from "../../../public/logo-black.png";
 import Image from "next/image";
@@ -105,7 +106,7 @@ const Navbar = () => {
         </div>
       </header>
       {/* second navbar */}
-      <div className="navbar sticky z-10 max-w-7xl  bg-white dark:bg-gray-700 text-gray-800 dark:text-white ">
+      <div className="navbar sticky top-0 opacity-80 z-10 max-w-7xl  bg-white dark:bg-gray-700 text-gray-800 dark:text-white ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -154,7 +155,7 @@ const Navbar = () => {
           setTheme(resolvedTheme === "light" ? "dark" : "light")
         }}
         >
-          {theme === "light" ? "🌙" : "🔆"}
+          {theme === "light" ? <BsFillMoonFill /> : "🔆"}
         </button>
           {
             session?

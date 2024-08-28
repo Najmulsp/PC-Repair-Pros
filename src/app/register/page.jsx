@@ -53,7 +53,7 @@ const Register = () => {
 			className=" dark:text-gray-800">
 	<div className="container flex flex-col justify-center items-center ite p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<Image src={registerLogo} height={500} width={500} alt="Register logo" className=""/>
+			<Image src={registerLogo} height={500} width={500} alt="Register logo"/>
 		</div>
 
 		<div className="w-full max-w-md mr-6 p-8 mb-10 space-y-3 rounded-xl border border-orange-500 text-white">

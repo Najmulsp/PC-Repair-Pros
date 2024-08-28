@@ -18,7 +18,8 @@ const Services =  () => {
       .then(data => setServices(data))
       .catch(error => console.log(error))
     },[])
-    // console.log(services)
+    console.log("eta paici")
+    console.log(services)
   return (
     <>
       <section className="py-6 sm:py-12 bg-white dark:bg-slate-900 text-gray-700 dark:text-white">
@@ -34,7 +35,7 @@ const Services =  () => {
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
     {
       services?.map((service) =>
-        <div key={service._id} className="my-card box-border max-w-xs mx-auto border overflow-hidden shadow-md dark:bg-gray-50 dark:text-gray-800">
+        <div key={service._id} className="my-card box-border max-w-xs mx-auto border overflow-hidden shadow-md dark:bg-gray-700 dark:text-gray-200">
         <div className="min-h-52 relative">
         <div className="cardImage min-h-52 border w-fit">
         <Image src={service.image} alt="Service Image" width="500" height="500" className="object-cover" />
@@ -61,8 +62,7 @@ const Services =  () => {
       </div>
       )
     }
-			
-			
+
 		</div>
 	</div>
 </section>
