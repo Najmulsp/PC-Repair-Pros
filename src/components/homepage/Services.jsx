@@ -18,8 +18,7 @@ const Services =  () => {
       .then(data => setServices(data))
       .catch(error => console.log(error))
     },[])
-    console.log("eta paici")
-    console.log(services)
+  
   return (
     <>
       <section className="py-6 sm:py-12 bg-white dark:bg-slate-900 text-gray-700 dark:text-white">

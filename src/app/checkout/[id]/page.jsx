@@ -3,9 +3,11 @@ import Image from 'next/image';
 import bannerLogo from "../../../../public/assets/logo/details page logo.png";
 import banner1 from "../../../../public/assets/banner/details page image1.jpg";
 import { getServiceDetails } from '@/app/session/getServices';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSession } from 'next-auth/react';
 
 const CheckoutPage = ({params}) => {
+  const {data} = useSession();
 
 const [service, setService] = useState({});
 const loadService = async () =>{
@@ -13,17 +15,37 @@ const loadService = async () =>{
   setService(details.res)
 }
 
-  
   const {title, image, description, price, _id} = service || {};
+
+  useEffect(()=>{
+    loadService()
+  }, [params])
 
     const handleBooking = async (e) =>{
       e.preventDefault();
-        const name = e.target.name.value;
-        const email = e.targetemail.value;
+        const name = data?.user?.name;
+        const email = data?.user?.email;
+        const price = e.target.price.value;
+        const date = e.target.date.value;
         const phone = e.target.phone.value;
+        const address = e.target.address.value;
         const message = e.target.message.value;
-    }
+      const newBookings = {
+      ...service, name, email, price, date, phone, address, message
+      }
+      console.log(newBookings)
 
+      const res = await fetch('http://localhost:3000/checkout/api/new-booking', {
+        method: 'POST',
+        body: JSON.stringify(newBookings),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+     
+      console.log(res)
+    }
+      
     return (
         <div className="container mx-auto pt-4 h-content">
                   {/* banner */}
@@ -40,23 +62,31 @@ const loadService = async () =>{
         <form onSubmit={handleBooking} className="w-3/5 my-10 p-10 bg-slate-700 mx-auto grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
 				<div className="col-span-full sm:col-span-3">
 					<label htmlFor="username" className="text-sm">Name</label>
-					<input name="name" type="text" placeholder="Your Name" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+					<input name="name" type="text" defaultValue={data?.user?.name} className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
 				</div>
 				<div className="col-span-full sm:col-span-3">
 					<label htmlFor="email" className="text-sm">Email</label>
-					<input name='email' type="email" placeholder="Your Email" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+					<input name='email' type="email" defaultValue={data?.user?.email} className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+				</div>
+				<div className="col-span-full sm:col-span-3">
+					<label htmlFor="price" className="text-sm">Price at $</label>
+					<input name="price" readOnly type="number" defaultValue={price} className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+				</div>
+				<div className="col-span-full sm:col-span-3">
+					<label htmlFor="date" className="text-sm">Date</label>
+					<input name="date" type="date"  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
 				</div>
 				<div className="col-span-full sm:col-span-3">
 					<label htmlFor="phone" className="text-sm">Phone</label>
-					<input name="website" type="number" placeholder="Your Phone Number" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+					<input name="phone" type="number" placeholder="Your Phone Number" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
 				</div>
 				<div className="col-span-full sm:col-span-3">
-					<label htmlFor="website" className="text-sm">Website</label>
-					<input id="website" type="text" placeholder="https://" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+					<label htmlFor="address" className="text-sm">Address</label>
+					<input name="address" type="text" placeholder="Your Location" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
 				</div>
 				<div className="col-span-full">
 					<label htmlFor="message" className="text-sm">Message</label>
-					<textarea id="message" placeholder="Your Message" className="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300"></textarea>
+					<textarea name="message" placeholder="Your Message" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300"></textarea>
 				</div>  
         <button type='submit' className='btn col-span-full bg-gradient-to-r from-[#f2b076] to-[#f24004] '>Order Confirm</button>                 
 			</form>                   
