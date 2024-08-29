@@ -5,6 +5,7 @@ import banner1 from "../../../../public/assets/banner/details page image1.jpg";
 import { getServiceDetails } from '@/app/session/getServices';
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
+import Swal from 'sweetalert2';
 
 const CheckoutPage = ({params}) => {
   const {data} = useSession();
@@ -33,7 +34,7 @@ const loadService = async () =>{
       const newBookings = {
       ...service, name, email, price, date, phone, address, message
       }
-      console.log(newBookings)
+      // console.log(newBookings)
 
       const res = await fetch('http://localhost:3000/checkout/api/new-booking', {
         method: 'POST',
@@ -42,8 +43,14 @@ const loadService = async () =>{
           "Content-Type": "application/json"
         }
       })
-     
-      console.log(res)
+      Swal.fire({
+				position: "top-end",
+				icon: "success",
+				title: "Service booked successfully",
+				showConfirmButton: false,
+				timer: 1500
+			  });
+      // console.log(res)
     }
       
     return (
@@ -74,7 +81,7 @@ const loadService = async () =>{
 				</div>
 				<div className="col-span-full sm:col-span-3">
 					<label htmlFor="date" className="text-sm">Date</label>
-					<input name="date" type="date"  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
+					<input name="date" type="date" defaultValue={new Date().getDate()}  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-violet-600 dark:border-gray-300" />
 				</div>
 				<div className="col-span-full sm:col-span-3">
 					<label htmlFor="phone" className="text-sm">Phone</label>

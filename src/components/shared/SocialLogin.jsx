@@ -1,6 +1,7 @@
 "use client";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Swal from "sweetalert2";
 
 
 const SocialLogin = () => {
@@ -10,6 +11,13 @@ const SocialLogin = () => {
         const res = signIn(provider, {redirect: false})   
     }
     if(session.status === 'authenticated'){
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Yor have successfully logged in",
+            showConfirmButton: false,
+            timer: 1500
+          });
         router.push('/')
     }
 
