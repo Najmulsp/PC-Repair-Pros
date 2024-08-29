@@ -21,19 +21,19 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/" className="font-semibold">Home</Link>
       </li>
       <li>
-        <Link href="/about">About</Link>
+        <Link href="/about" className="font-semibold">About</Link>
       </li>
       <li>
-        <Link href="/services">Services</Link>
+        <Link href="/services" className="font-semibold">Services</Link>
       </li>
       <li>
-        <Link href="/blog">Blog</Link>
+      <Link href="/my-bookings" className="font-semibold hover:text-orange-500 active:bg-orange-500">My Bookings</Link>
       </li>
       <li>
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact" className="font-semibold">Contact</Link>
       </li>
     </>
   );
@@ -81,7 +81,7 @@ const Navbar = () => {
                 Urgent Need Support?
               </p>
 
-              <small>+123-456-7898</small>
+              <small className="text-black">+123-456-7898</small>
             </div>
           </div>
         </div>
