@@ -99,7 +99,7 @@ const [bookings, setBookings] = useState([]);
         />
       </div>
       {/* table */}
-      <div className="w-full lg:w-4/5 my-10 p-4 bg-blue-950 mx-auto ">
+      <div className="w-full lg:w-4/5 my-10 p-4 bg-gray-700 mx-auto ">
         <div className="overflow-x-auto">
           <table className="table w-full border">
             {/* head */}
@@ -110,7 +110,7 @@ const [bookings, setBookings] = useState([]);
                 <th>Service</th>
                 <th>Booking Date</th>
                 <th>Price</th>
-                <th className="text-center">Action</th>
+                <th className="pl-12">Action</th>
               </tr>
             </thead>
             <tbody>

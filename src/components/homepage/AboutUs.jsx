@@ -12,10 +12,14 @@ import { FaPeopleCarry } from "react-icons/fa";
 
 const AboutUs = () => {
     return (
-        <div>
-            <section className="bg-white dark:bg-slate-900 text-gray-800 dark:text-white">
+        <>
+            <section id="about-section" className="bg-white dark:bg-slate-900 text-gray-800 dark:text-white">
 	<div className="container flex  gap-6 flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-		<div className="grid grid-cols-2 box-border border-red-600 items-center justify-center ">
+		<div
+		data-aos-duration="1000"
+		data-aos-delay="1000"
+		data-aos="fade-right"
+		className="grid grid-cols-2 box-border border-red-600 items-center justify-center ">
 			
 			<Image src={img1} alt="" width="400" height="400" className="rounded-r-full"></Image>
 			<Image src={img2} alt="" width="400" height="400" className="rounded-l-full"></Image>
@@ -23,7 +27,11 @@ const AboutUs = () => {
 			<Image src={img4} alt="" width="400" height="400" className="rounded-l-full"></Image>
 		</div>
 					{/* text-container */}
-		<div className="flex lg:w-3/5 border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
+		<div
+		data-aos-duration="1000"
+		data-aos-delay="1200"
+		data-aos="fade-left"
+		className="flex lg:w-3/5 border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
 		<p className="flex ml-24 pb-2 text-orange-500 items-center mx-auto  justify-start pt-2 gap-3">
               <Image src={icon1} width={40} height={40} alt="icon" />
               ABOUT US
@@ -55,7 +63,7 @@ const AboutUs = () => {
 		</div>
 	</div>
 </section>
-        </div>
+        </>
     );
 };
 

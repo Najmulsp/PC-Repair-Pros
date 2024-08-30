@@ -1,5 +1,8 @@
+"use client"
 import HomePage from "@/components/homepage/HomePage";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Home() {
   return (

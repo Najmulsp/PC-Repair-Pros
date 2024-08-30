@@ -14,12 +14,20 @@ const WhyChoose = () => {
         <div className="container mx-auto">
           <div className="flex items-center lg:items-start gap-6">
             <div className="text-center lg:text-left  mx-auto lg:mx-0">
-              <p className="flex items-center  justify-center lg:justify-start  gap-3">
+              <p
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+              data-aos="fade-right"
+              className="flex items-center  justify-center lg:justify-start  gap-3">
                 <Image src={icon1} width={40} height={40} alt="icon" />
                 WHY CHOOSE US
                 <Image src={icon1} width={40} height={40} alt="icon" />
               </p>
-              <h2 className="text-2xl lg:text-4xl font-bold">
+              <h2
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+              data-aos="fade-right"
+              className="text-2xl lg:text-4xl font-bold">
                 Experience Seamless Repairs: Your <br /> Devices Deserve the
                 Best
               </h2>
@@ -40,7 +48,11 @@ const WhyChoose = () => {
       <section className="px-5 py-10 bg-white dark:bg-zinc-900 text-gray-800 dark:text-white">
         <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
           {/* text div1 */}
-          <div className="flex flex-col justify-between col-span-12 lg:col-span-4  py-2 space-y-8 md:space-y-16 ">
+          <div
+          data-aos-duration="1000"
+          data-aos-delay="1400"
+          data-aos="fade-right"
+          className="flex flex-col justify-between col-span-12 lg:col-span-4  py-2 space-y-8 md:space-y-16 ">
             <div className="flex flex-col space-y-8 md:space-y-12">
               <div className="flex flex-col space-y-2">
                 <h3 className="flex items-center space-x-2 dark:text-gray-600">
@@ -115,7 +127,11 @@ const WhyChoose = () => {
             </div>
           </div>
           {/* image div 2 */}
-          <div className="relative flex  bg-center bg-no-repeat bg-cover col-span-12 lg:col-span-4  min-h-96">
+          <div
+          data-aos-duration="1000"
+          data-aos-delay="1500"
+          data-aos="zoom-in"
+          className="relative flex  bg-center bg-no-repeat bg-cover col-span-12 lg:col-span-4  min-h-96">
             <Image
               src={logo1}
               width={400}
@@ -126,8 +142,11 @@ const WhyChoose = () => {
           </div>
           {/* batch div 3 */}
           <div className="col-span-12 lg:col-span-4 flex flex-col justify-center gap-10 items-center">
-            <div className=" lg:ml-20 bg-[#F6F7FF] w-full lg:w-[300px] rounded-full text-center py-10 ">
-            
+            <div
+            data-aos-duration="1000"
+            data-aos-delay="1600"
+            data-aos="fade-left"
+            className=" lg:ml-20 bg-[#F6F7FF] dark:bg-[#303874] w-full lg:w-[300px] rounded-full text-center py-10 ">
               <h1 className="text-4xl font-bold text-orange-500">
               <CountUp
                     start={0}
@@ -137,7 +156,11 @@ const WhyChoose = () => {
                 </h1>
               <p>Years Of Experience</p>
             </div>
-            <div className=" lg:ml-10 bg-[#FFF8F5] w-full lg:w-[300px] rounded-full text-center py-10">
+            <div
+            data-aos-duration="1000"
+            data-aos-delay="1700"
+            data-aos="fade-left"
+            className=" lg:ml-10 bg-[#FFF8F5] dark:bg-[#604032] w-full lg:w-[300px] rounded-full text-center py-10">
               <h1 className="text-4xl font-bold text-orange-500">
               <CountUp
                     start={0}
@@ -147,7 +170,11 @@ const WhyChoose = () => {
                 </h1>
               <p>Devices Repaired</p>
             </div>
-            <div className=" lg:-ml-10 bg-[#F6F7FF] w-full lg:w-[300px] rounded-full text-center py-10">
+            <div
+            data-aos-duration="1000"
+            data-aos-delay="1800"
+            data-aos="fade-left"
+            className=" lg:-ml-10 bg-[#F6F7FF] dark:bg-[#313765] w-full lg:w-[300px] rounded-full text-center py-10">
               <h1 className="text-4xl font-bold text-orange-500">
               <CountUp
                     start={0}

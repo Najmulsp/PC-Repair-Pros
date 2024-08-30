@@ -14,11 +14,15 @@ import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 
+
 const Navbar = () => {
   const { data: session, status } = useSession();
   const { resolvedTheme, theme, setTheme } = useTheme()
-  const router = useRouter();
-  const isActive = (pathname) => router.pathname === pathname;
+  const router = useRouter()
+  const pathname = router.pathname;
+  const isActive = (path) => {
+    return pathname === path;
+  };
 
   const navItems = (
     <>
@@ -26,25 +30,21 @@ const Navbar = () => {
         <Link href="/"
          className={
           isActive('/availableCamps')
-            ? 'border-2 px-2 lg:px-4 py-2 rounded-lg bg-sky-600 font-bold dark:text-black'
+            ? 'border-2 px-2 lg:px-4 py-2 rounded-lg bg-orange-600 font-bold dark:text-black text-white'
             : ''
         }
          >Home</Link>
       </li>
       <li>
-        <Link href="/about" className="font-semibold">About</Link>
-      </li>
-      <li>
-        <Link href="/services" className="font-semibold">Services</Link>
+        <Link href="#about-section" className="font-semibold">About</Link>
       </li>
       <li>
       <Link href="/my-bookings" className="font-semibold hover:text-orange-500 active:bg-orange-500">My Bookings</Link>
       </li>
-      <li>
-        <Link href="/contact" className="font-semibold">Contact</Link>
-      </li>
     </>
   );
+
+
   return (
     <>
       {/* first navbar */}

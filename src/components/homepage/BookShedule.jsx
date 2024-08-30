@@ -7,19 +7,35 @@ const BookShedule = () => {
         <div>
             <section className=" p-10 bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
 			<div className="space-y-2 text-center py-6">
-        <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
+        <p
+		data-aos-duration="1000"
+		data-aos-delay="1000"
+		data-aos="fade-right"
+		className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
               <Image src={icon1} width={40} height={40} alt="icon" />
               BOOK A SCHEDULE
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-			<p className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Schedule Expert Repairs Instantly</p>
+			<p
+			data-aos-duration="1000"
+			data-aos-delay="1200"
+			data-aos="fade-left"
+			className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Schedule Expert Repairs Instantly</p>
 		</div>
 	<div className="container  mx-auto flex flex-col lg:flex-row items-center gap-6">
         <div>
-		<Image src={service1} width={400} height={600} alt="icon" className="rounded-xl"/>
+		<Image
+		data-aos-duration="1000"
+		data-aos-delay="1400"
+		data-aos="fade-right"
+		src={service1} width={400} height={600} alt="icon" className="rounded-xl"/>
 		</div>
                                     {/* form */}
-                    <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                    <div
+					data-aos-duration="1000"
+					data-aos-delay="1400"
+					data-aos="fade-left"
+					className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
 				<div className="col-span-full">
 					<label htmlFor="name" className="text-sm">Name</label>
 					<input id="name" type="text" placeholder="Your Name" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-orange-500 dark:border-gray-300 text-black dark:text-white bg-slate-200 dark:bg-slate-700" />

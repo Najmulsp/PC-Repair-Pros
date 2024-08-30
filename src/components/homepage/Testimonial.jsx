@@ -18,12 +18,20 @@ const Testimonial = () => {
       <section className="bg-[#0F003E] dark:text-gray-800 flex flex-col lg:flex-row justify-center items-center">
         <div className="container max-w-6xl p-6  mx-auto ">
           <div className=" flex flex-col justify-center items-center lg:mt-8 w-full lg:col-span-3">
-            <p className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
+            <p
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            data-aos="fade-right"
+            className="flex text-orange-500 items-center mx-auto  justify-center pt-2 gap-3">
               <Image src={icon1} width={40} height={40} alt="icon" />
               TESTIMONIALS
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-            <h1 className="text-center mx-auto w-full lg:w-6/12 text-white text-4xl font-bold">
+            <h1 
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+            data-aos="fade-left"
+            className="text-center mx-auto w-full lg:w-6/12 text-white text-4xl font-bold">
               Success Stories: From Our Client’s Perspective
             </h1>
           </div>

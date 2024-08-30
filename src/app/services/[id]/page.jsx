@@ -31,6 +31,7 @@ const ServiceDetails = async({params}) => {
           <Image src={image} alt="Service Image" width={500} height={300} className=" w-full h-[450px] opacity-50" />
             
           </div>
+          <h2 className="text-2xl text-black dark:text-white pt-4 ml-2">Title: {title}</h2>
           <p className="text-black dark:text-white py-4 ml-2"><span className="font-bold">Description:</span> {description}
           Our service center is able to fix all types of problems regarding your Laptop and Notebook. Our employees are highly trained and has lots of experience fixing laptops and notebooks. We provide hardware and software support for your required laptop or notebook. There are numerous types of hardware supports that we specialize on. We able to fix any kind of power disturbances or charging problems. We also look at the internal problems like unstable BIOS laptop or notebook hanging problem, slow or crashed windows and even install windows if required. We are also able to repair the broken lid of a laptop or notebook and replace one or both of the broken hinges with either metal or plastic hinges. If there is any type of display malfunction or the display is dead, then we provide new display ribbon or plex cable for your display. 
           </p>
@@ -65,7 +66,7 @@ const ServiceDetails = async({params}) => {
               </Link>
           </div>
           <Image src={banner2} alt="Service Image" width={200} height={50} className="pt-6 mx-auto" />
-          <div className="bg-white dark:bg-slate-700 rounded-xl">
+          <div className="bg-white mt-4 dark:bg-slate-700 rounded-xl">
             <div className="p-8 space-y-4">
               <h1 className="text-2xl font-bold text-black">Services</h1>
               <p className="bg-blue-100 text-black hover:bg-blue-950 hover:text-white p-4 flex justify-between items-center">
@@ -102,12 +103,12 @@ const ServiceDetails = async({params}) => {
              
             </div>
             </div>
-            <div className="bg-blue-950 mx-6 rounded-xl space-y-4 pt-6 pb-10 text-center text-white">
+            <div className="bg-blue-950 mt-4 mx-6 rounded-xl space-y-4 pt-6 pb-10 text-center text-white">
             <Image src={PcLogo} alt="Service Image" width={50} height={30} className="mx-auto" />
             <h2 className="text-2xl font-bold">PC Repair Pros</h2>
             <p>Need Help? We Are Here <br />
             To Help You</p>
-            <div className=" relative py-6 space-y-3 bg-white rounded-xl mx-6">
+            <div className=" relative py-6 space-y-3 bg-white dark:bg-slate-700 rounded-xl mx-6">
               <h3 className="text-xl text-black font-bold"><span className="text-orange-600">PC Repair</span> Special</h3>
               <p className="text-black pb-2">Save up to <span className="text-orange-600">60% off</span></p>
               <div className="absolute px-6 py-2 rounded-xl text-white bg-orange-600 left-24 lg:left-20 -bottom-5">

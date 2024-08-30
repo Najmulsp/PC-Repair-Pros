@@ -5,6 +5,7 @@ import Footer from "@/components/shared/Footer";
 import AuthProvider from "./session/AuthProvider";
 import { ThemeProvider } from "next-themes";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
