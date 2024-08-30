@@ -50,7 +50,7 @@ const loadService = async () =>{
 				showConfirmButton: false,
 				timer: 1500
 			  });
-      // console.log(res)
+      e.target.reset()
     }
       
     return (

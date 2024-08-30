@@ -12,16 +12,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { data: session, status } = useSession();
   const { resolvedTheme, theme, setTheme } = useTheme()
-
+  const router = useRouter();
+  const isActive = (pathname) => router.pathname === pathname;
 
   const navItems = (
     <>
       <li>
-        <Link href="/" className="font-semibold">Home</Link>
+        <Link href="/"
+         className={
+          isActive('/availableCamps')
+            ? 'border-2 px-2 lg:px-4 py-2 rounded-lg bg-sky-600 font-bold dark:text-black'
+            : ''
+        }
+         >Home</Link>
       </li>
       <li>
         <Link href="/about" className="font-semibold">About</Link>

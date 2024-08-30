@@ -4,7 +4,7 @@ import loginLogo from "../../../public/assets/logo/login logo.png";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import Swal from "sweetalert2";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import SocialLogin from "@/components/shared/SocialLogin";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import { useState } from "react";
@@ -12,7 +12,8 @@ import { useState } from "react";
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
 	const router = useRouter();
-
+	const searchParams = useSearchParams();
+	const path = searchParams.get('redirect');
     const handleLogin = async (e) =>{
         e.preventDefault();
 		const email = e.target.email.value;
@@ -21,14 +22,15 @@ const Login = () => {
 		const res = await signIn("credentials", {
 			email,
 			password,
-			redirect : false,
+			redirect : true,
+			callbackUrl : path? path : '/'
 		});
 
 		if(res.status === 200){
 			Swal.fire({
 				position: "top-end",
 				icon: "success",
-				title: "Yor have successfully logged in",
+				title: "You have successfully logged in",
 				showConfirmButton: false,
 				timer: 1500
 			  });
