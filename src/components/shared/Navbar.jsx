@@ -12,38 +12,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+
+const navLinks = [
+  {
+    id: 1,
+    name: "Home",
+    path: "/"
+  },  
+  {
+    id: 2,
+    name: "My Bookings",
+    path: "/my-bookings"
+  }
+]
 
 
 const Navbar = () => {
   const { data: session, status } = useSession();
   const { resolvedTheme, theme, setTheme } = useTheme()
   const router = useRouter()
-  const pathname = router.pathname;
-  const isActive = (path) => {
-    return pathname === path;
-  };
-
-  const navItems = (
-    <>
-      <li>
-        <Link href="/"
-         className={
-          isActive('/availableCamps')
-            ? 'border-2 px-2 lg:px-4 py-2 rounded-lg bg-orange-600 font-bold dark:text-black text-white'
-            : ''
-        }
-         >Home</Link>
-      </li>
-      <li>
-        <Link href="#about-section" className="font-semibold">About</Link>
-      </li>
-      <li>
-      <Link href="/my-bookings" className="font-semibold hover:text-orange-500 active:bg-orange-500">My Bookings</Link>
-      </li>
-    </>
-  );
-
+  const pathname = usePathname();
+  const isActive = (path) => path === pathname;
 
   return (
     <>
@@ -135,9 +125,24 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-[#F3F4F6] rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu-sm dropdown-content bg-slate-200 dark:bg-gray-700 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              {navItems}
+              {/* {navItems} */}
+              {
+    navLinks?.map((link) => {
+      return (
+        <li key={link.id} className="py-2">
+          <Link href={link.path}
+          className={
+            isActive(link.path)
+              ? 'px-2 lg:px-4 py-2 rounded-lg bg-orange-600 font-bold text-white'
+              : ''
+          }
+          >{link.name}</Link>
+        </li>
+      );
+    })
+  }
             </ul>
           </div>
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-serif">
@@ -151,9 +156,25 @@ const Navbar = () => {
             PC <span className="text-orange-500 font-bold font-serif">Repair</span> Pros
           </Link>
         </div>
+                 {/* {navItems} */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-          {navItems}
+          <ul className=" menu-horizontal px-1">
+          {
+    navLinks?.map((link) => {
+      return (
+        <li key={link.id} className="px-2">
+          <Link href={link.path}
+          className={
+            isActive(link.path)
+              ? 'px-2 lg:px-4 py-2 rounded-lg bg-orange-600 font-bold text-white'
+              : ''
+          }
+          >{link.name}</Link>
+        </li>
+      );
+    })
+  }
+         
           </ul>
         </div>
         <div className="navbar-end">
@@ -175,22 +196,6 @@ const Navbar = () => {
             Login
           </button></Link>
           }
-          {/* {
-            session?.status === "loading" &&
-            <h6>Loading...</h6>
-          } */}
-          {/* {
-            // session?.status === "unauthenticated" &&
-            <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
-            Login
-          </button></Link>
-          }
-           {
-            session?.status === "authenticated" &&
-            <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
-            Logout
-            </button>
-          }  */}
           
         </div>
       </div>

@@ -17,13 +17,21 @@ const ServiceDetails = async({params}) => {
   return (
     <div className="container mx-auto pt-4 h-content">
       <div className="relative w-full max-h-96  dark:bg-gray-950 bg-white">
-      <Image src={banner1} alt="Service Image" width={1300} height={100} className="overflow-hidden relative object-contain" />
+      <Image
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      data-aos-delay="1000"
+      src={banner1} alt="Service Image" width={1300} height={100} className="overflow-hidden relative object-contain" />
       <div className="absolute inset-0 bg-gray-950 opacity-60"></div>{" "}
         <h1 className="text-2xl lg:text-5xl absolute font-bold text-white text-left pt-4 lg:pt-20 top-1 left-40 lg:left-[420px]">
           Service Details
         </h1>
-        <p className="text-xl lg:text-2xl absolute text-white text-center pt-12 lg:pt-36 top-1 left-2 lg:left-[320px]">Please book for service through Proceed Checkout</p>
-        <Image src={bannerLogo} alt="Service Image" width={330} height={30} className="absolute bottom-0 left-[35%] hidden lg:block" />
+        <p className="text-xl lg:text-2xl absolute text-white text-center pt-12 lg:pt-36 top-1 left-2 lg:left-[320px]">Please book for service through <span className="text-orange-400">Proceed Checkout</span></p>
+        <Image
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        src={bannerLogo} alt="Service Image" width={330} height={30} className="absolute bottom-0 left-[35%] hidden lg:block" />
       </div>
       <div className="my-10 mx-6  grid grid-cols-1 lg:grid-cols-3 gap-6 ">
         <div className="lg:col-span-2 col-span-1">
@@ -36,19 +44,35 @@ const ServiceDetails = async({params}) => {
           Our service center is able to fix all types of problems regarding your Laptop and Notebook. Our employees are highly trained and has lots of experience fixing laptops and notebooks. We provide hardware and software support for your required laptop or notebook. There are numerous types of hardware supports that we specialize on. We able to fix any kind of power disturbances or charging problems. We also look at the internal problems like unstable BIOS laptop or notebook hanging problem, slow or crashed windows and even install windows if required. We are also able to repair the broken lid of a laptop or notebook and replace one or both of the broken hinges with either metal or plastic hinges. If there is any type of display malfunction or the display is dead, then we provide new display ribbon or plex cable for your display. 
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            <div className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
+            <div
+            data-aos="zoom-right"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
               <h2 className="text-2xl font-bold">Instant Car Services</h2>
               <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
             </div>
-            <div className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
+            <div
+            data-aos="zoom-left"
+            data-aos-duration="2000"
+            data-aos-delay="1100"
+            className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
               <h2 className="text-2xl font-bold">24/7 Quality Service</h2>
               <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
             </div>
-            <div className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
+            <div
+            data-aos="zoom-right"
+            data-aos-duration="2000"
+            data-aos-delay="1200"
+            className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
               <h2 className="text-2xl font-bold">Easy Customer Service</h2>
               <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
             </div>
-            <div className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
+            <div
+            data-aos="zoom-left"
+            data-aos-duration="2000"
+            data-aos-delay="1300"
+            className="col-span-2 p-10 space-y-4 rounded-xl text-black dark:text-gray-100 bg-slate-200 dark:bg-slate-700 border-t-4 border-blue-950 hover:border-orange-600 mt-4">
               <h2 className="text-2xl font-bold">Quality Cost Service</h2>
               <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
             </div>
