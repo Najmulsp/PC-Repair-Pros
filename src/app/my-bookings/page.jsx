@@ -78,9 +78,9 @@ const [bookings, setBookings] = useState([]);
       <div className="relative w-full max-h-96  dark:bg-gray-950 bg-white">
         <Image
 
-data-aos="zoom-in"
-data-aos-duration="2000"
-data-aos-delay="1000"
+// data-aos="zoom-in"
+// data-aos-duration="2000"
+// data-aos-delay="1000"
           src={banner1}
           alt="Service Image"
           width={1300}
@@ -95,9 +95,9 @@ data-aos-delay="1000"
           You Can <span className="text-red-400">Delete</span> or <span className="text-orange-500">Update</span> Your Order
         </p>
         <Image
-        data-aos="zoom-in"
-        data-aos-duration="2000"
-        data-aos-delay="1000"
+        // data-aos="zoom-in"
+        // data-aos-duration="2000"
+        // data-aos-delay="1000"
           src={bannerLogo}
           alt="Service Image"
           width={330}
@@ -107,9 +107,9 @@ data-aos-delay="1000"
       </div>
       {/* table */}
       <div
-      data-aos="zoom-in"
-      data-aos-duration="2000"
-      data-aos-delay="1200"
+      // data-aos="zoom-in"
+      // data-aos-duration="2000"
+      // data-aos-delay="1200"
       className="w-full lg:w-4/5 my-10 p-4 bg-gray-700 mx-auto ">
         <div className="overflow-x-auto">
           <table className="table w-full border">

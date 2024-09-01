@@ -29,9 +29,9 @@ const navLinks = [
 
 
 const Navbar = () => {
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
   const { resolvedTheme, theme, setTheme } = useTheme()
-  const router = useRouter()
+  // const router = useRouter()
   const pathname = usePathname();
   const isActive = (path) => path === pathname;
 
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
           {/* urgent support 3*/}
           <div className="flex  px-4 rounded-full bg-orange-100 w-full lg:w-auto  justify-center space-x-3">
-            <div className=" rounded-full bg-orange-500 h-10 mt-3 p-2 flex items-center">
+            <div className="rounded-full bg-orange-500 h-10 mt-3 p-2 flex items-center">
               <LuPhoneCall className="text-2xl  text-white" />
             </div>
 
@@ -135,7 +135,7 @@ const Navbar = () => {
           <Link href={link.path}
           className={
             isActive(link.path)
-              ? 'px-2 lg:px-4 py-2 rounded-lg bg-orange-600 font-bold text-white'
+              ? 'px-2 lg:px-4 py-2 rounded-lg bg-orange-500 font-bold text-white'
               : ''
           }
           >{link.name}</Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
           <Link href={link.path}
           className={
             isActive(link.path)
-              ? 'px-2 lg:px-4 py-2 rounded-lg bg-orange-600 font-bold text-white'
+              ? 'px-2 lg:px-4 py-2 rounded-lg bg-orange-500 font-bold text-white'
               : ''
           }
           >{link.name}</Link>

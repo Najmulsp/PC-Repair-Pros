@@ -1,4 +1,5 @@
 import connectDB from "@/lib/connectDB";
+import { NextResponse } from "next/server";
 
             // delete my bookings
 export const DELETE = async (request, { params }) => {
@@ -8,9 +9,9 @@ export const DELETE = async (request, { params }) => {
   try {
     console.log("Attempting to delete document with _id:", params.id);
     const res = await bookingsCollection.deleteOne({ _id:(params.id) });   
-    return Response.json({ res });
+    return NextResponse.json({ res });
   } catch (error) {
-    return Response.json(error);
+    return NextResponse.json(error);
   }
 };
 
@@ -22,9 +23,9 @@ export const GET = async (request, { params }) => {
   try {
     console.log("Attempting to find document with _id:", params.id);
     const res = await bookingsCollection.findOne({ _id:(params.id) });   
-    return Response.json({ res });
+    return NextResponse.json({ res });
   } catch (error) {
-    return Response.json(error);
+    return NextResponse.json(error);
   }
 };
 
@@ -44,8 +45,8 @@ export const PATCH = async (request, { params }) => {
   {
     upsert: true
   });   
-    return Response.json({ res });
+    return NextResponse.json({ res });
   } catch (error) {
-    return Response.json(error);
+    return NextResponse.json(error);
   }
 };
