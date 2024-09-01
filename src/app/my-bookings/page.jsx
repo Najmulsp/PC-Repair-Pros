@@ -23,7 +23,7 @@ const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
     loadData();
-  }, [session]);
+  });
 
   const handleDelete = async (id) => {
     const confirmation = await Swal.fire({

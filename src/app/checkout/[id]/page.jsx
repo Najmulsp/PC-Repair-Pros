@@ -11,16 +11,24 @@ const CheckoutPage = ({params}) => {
   const {data} = useSession();
 
 const [service, setService] = useState({});
-const loadService = async () =>{
-  const details = await getServiceDetails(params.id)
-  setService(details.res)
-}
+useEffect(() => {
+  const loadService = async () => {
+    const details = await getServiceDetails(params.id);
+    setService(details.res);
+  };
+  
+  loadService();
+}, [params.id]);
+// const loadService = async () =>{
+//   const details = await getServiceDetails(params.id)
+//   setService(details.res)
+// }
 
-  const {title, image, description, price, _id} = service || {};
 
-  useEffect(()=>{
-    loadService()
-  }, [params])
+// useEffect(()=>{
+//   loadService()
+// }, [loadService])
+const {title, image, description, price, _id} = service || {};
 
     const handleBooking = async (e) =>{
       e.preventDefault();

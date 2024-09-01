@@ -86,7 +86,7 @@ const Login = () => {
 		<div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
 	</div>
 	<SocialLogin></SocialLogin>
-	<p className="text-xs text-center sm:px-6 ">Don't have an account?
+	<p className="text-xs text-center sm:px-6 ">Do not have an account?
 		<Link rel="noopener noreferrer" href="/register" className="font-bold underline "> Register</Link>
 	</p>
 </div>

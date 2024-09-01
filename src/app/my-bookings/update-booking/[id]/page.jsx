@@ -49,7 +49,7 @@ const loadBooking = async () =>{
 }
   useEffect(()=>{
     loadBooking()
-  }, [params])
+  })
       
     return (
         <div className="container mx-auto pt-4 h-content">
