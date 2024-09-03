@@ -5,7 +5,7 @@ import Link from "next/link";
 import Swal from "sweetalert2";
 import SocialLogin from "@/components/shared/SocialLogin";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 
 const Register = () => {
@@ -43,6 +43,7 @@ const Register = () => {
 
 
     return (
+		<Suspense>
         <div>
                           {/* Register section */}
             <section
@@ -99,6 +100,7 @@ const Register = () => {
 	</div>
 </section>
         </div>
+		</Suspense>
     );
 };
 
