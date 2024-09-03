@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import SocialLogin from "@/components/shared/SocialLogin";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import { Suspense, useState } from "react";
+import loading from "../loading";
 
 
 const Register = () => {
@@ -43,7 +44,7 @@ const Register = () => {
 
 
     return (
-		<Suspense>
+		<Suspense fallback={loading}>
         <div>
                           {/* Register section */}
             <section

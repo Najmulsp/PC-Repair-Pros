@@ -8,6 +8,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import SocialLogin from "@/components/shared/SocialLogin";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import { Suspense, useState } from "react";
+import loading from "../loading";
 
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
@@ -41,7 +42,7 @@ const Login = () => {
 
 
     return (
-		<Suspense>
+		<Suspense fallback={loading}>
         <div>
                              {/* login section */}
             <section

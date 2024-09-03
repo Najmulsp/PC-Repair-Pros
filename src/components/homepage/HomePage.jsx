@@ -1,3 +1,4 @@
+// "use client"
 import AboutUs from "./AboutUs";
 import Banner from "./Banner";
 import Blog from "./Blog";
@@ -8,7 +9,8 @@ import Partners from "./Partners";
 import Services from "./Services";
 import Testimonial from "./Testimonial";
 import WhyChoose from "./WhyChoose";
-
+// import 'aos/dist/aos.css';
+// AOS.init();
 
 
 const HomePage = () => {
