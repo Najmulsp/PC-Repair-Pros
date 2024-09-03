@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import { useRouter, useSearchParams } from "next/navigation";
 import SocialLogin from "@/components/shared/SocialLogin";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
@@ -41,6 +41,7 @@ const Login = () => {
 
 
     return (
+		<Suspense>
         <div>
                              {/* login section */}
             <section
@@ -93,6 +94,7 @@ const Login = () => {
 	</div>
 </section>
         </div>
+		</Suspense>
     );
 };
 
