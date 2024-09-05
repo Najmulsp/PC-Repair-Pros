@@ -44,32 +44,6 @@ const handleLogin = async (e) => {
   }
 };
 
-	
-    // const handleLogin = async (e) =>{
-    //     e.preventDefault();
-	// 	const email = e.target.email.value;
-	// 	const password = e.target.password.value;
-	// 	console.log(email, password)
-	// 	const res = await signIn("credentials", {
-	// 		email,
-	// 		password,
-	// 		redirect : true,
-	// 		callbackUrl : path? path : '/'
-	// 	});
-
-	// 	if(res.status === 200){
-	// 		Swal.fire({
-	// 			position: "top-end",
-	// 			icon: "success",
-	// 			title: "You have successfully logged in",
-	// 			showConfirmButton: false,
-	// 			timer: 1500
-	// 		  });
-	// 		  router.push('/');
-	// 		console.log(res)
-	// 	}
-    // };
-
 
     return (
 		<Suspense fallback={loading}>

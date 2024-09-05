@@ -169,10 +169,10 @@ const Testimonial = () => {
 
                             <div className="text-white">
                               <p className="leading-tight font-bold pt-3">
-                                Location:
+                                Albert Leo
                               </p>
 
-                              <small>2750 Quadra Street, New York, USA</small>
+                              <small>CTO at Coolboy Computer Shop</small>
                             </div>
                           </div>
                         </div>
@@ -206,10 +206,10 @@ const Testimonial = () => {
 
                             <div className="text-white">
                               <p className="leading-tight font-bold pt-3">
-                                Location:
+                                Mr Hackson
                               </p>
 
-                              <small>2750 Quadra Street, New York, USA</small>
+                              <small>CO, Softbence.com</small>
                             </div>
                           </div>
                         </div>
