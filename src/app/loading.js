@@ -2,8 +2,8 @@
 
 const loading = () => {
     return (
-        <div>
-            <h1>Loading...</h1>
+        <div className="flex justify-center items-center">
+            <span className="loading loading-bars loading-lg text-orange-500"></span>
         </div>
     );
 };

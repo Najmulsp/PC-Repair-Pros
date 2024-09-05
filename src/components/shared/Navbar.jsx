@@ -27,6 +27,18 @@ const navLinks = [
   }
 ]
 
+const handleLogout = async () => {
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "You have successfully logged out",
+    showConfirmButton: false,
+    timer: 1500
+  });
+  
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+  signOut({ redirect: true, callbackUrl: "/" });
+};
 
 const Navbar = () => {
   const { data: session } = useSession();
@@ -188,7 +200,9 @@ const Navbar = () => {
         </button>
           {
             session?
-            <button onClick={() => signOut({redirect: true, callbackUrl: "/"})} className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            <button
+            onClick={handleLogout}
+            className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Logout
             </button>
             :
@@ -196,7 +210,7 @@ const Navbar = () => {
             Login
           </button></Link>
           }
-          
+         {/* onClick={() => signOut({redirect: true, callbackUrl: "/"})}  */}
         </div>
       </div>
     </>

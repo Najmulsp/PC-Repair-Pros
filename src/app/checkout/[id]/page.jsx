@@ -111,7 +111,7 @@ const {title, image, description, price, _id} = service || {};
 					<label htmlFor="message" className="text-sm">Message</label>
 					<textarea name="message" placeholder="Your Message" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 text-black focus:dark:ring-orange-600 dark:border-gray-300"></textarea>
 				</div>  
-        <button type='submit' className='btn col-span-full bg-gradient-to-r from-[#f2b076] to-[#f24004] '>Order Confirm</button>                 
+        <button type='submit' className='btn col-span-full bg-gradient-to-r from-[#f2b076] to-[#f24004] text-white'>Order Confirm</button>                 
 			</form>                   
             
         </div>
