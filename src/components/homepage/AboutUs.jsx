@@ -16,7 +16,7 @@ const AboutUs = () => {
             <section id="about-section" className="bg-white dark:bg-slate-900 text-gray-800 dark:text-white">
 	<div className="container flex  gap-6 flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div
-		data-aos-duration="1000"
+		data-aos-duration="500"
 		data-aos-delay="1000"
 		data-aos="fade-right"
 		className="grid grid-cols-2 box-border border-red-600 items-center justify-center ">
@@ -28,7 +28,7 @@ const AboutUs = () => {
 		</div>
 					{/* text-container */}
 		<div
-		data-aos-duration="1000"
+		data-aos-duration="500"
 		data-aos-delay="1200"
 		data-aos="fade-left"
 		className="flex lg:w-3/5 border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">

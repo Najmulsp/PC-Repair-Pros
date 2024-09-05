@@ -15,7 +15,7 @@ const [bookings, setBookings] = useState([]);
 
   const loadData = async () => {
     const res = await fetch(
-      `http://localhost:3000/my-bookings/api/${session?.data?.user?.email}`
+      `https://pc-repair-pros.vercel.app/my-bookings/api/${session?.data?.user?.email}`
     );
     const data = await res.json();
     setBookings(data?.myBookings);
@@ -39,7 +39,7 @@ const [bookings, setBookings] = useState([]);
     if (confirmation.isConfirmed) {
       try {
         const response = await fetch(
-          `http://localhost:3000/my-bookings/api/handleBooking/${id}`, 
+          `https://pc-repair-pros.vercel.app/my-bookings/api/handleBooking/${id}`, 
           { method: "DELETE" }
         );
         const result = await response.json();

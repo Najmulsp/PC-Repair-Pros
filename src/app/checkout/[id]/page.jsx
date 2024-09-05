@@ -44,7 +44,7 @@ const {title, image, description, price, _id} = service || {};
       }
       // console.log(newBookings)
 
-      const res = await fetch('http://localhost:3000/checkout/api/new-booking', {
+      const res = await fetch('https://pc-repair-pros.vercel.app/checkout/api/new-booking', {
         method: 'POST',
         body: JSON.stringify(newBookings),
         headers: {

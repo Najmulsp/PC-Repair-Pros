@@ -12,7 +12,7 @@ const UpdateBooking = ({params}) => {
 const [booking, setBooking] = useState({});
 
 const loadBooking = async () =>{
-  const bookingData = await fetch(`http://localhost:3000/my-bookings/api/handleBooking/${params.id}`);
+  const bookingData = await fetch(`https://pc-repair-pros.vercel.app/my-bookings/api/handleBooking/${params.id}`);
   const data = await bookingData.json();
   console.log(data.res);
   setBooking(data.res)
@@ -29,7 +29,7 @@ const loadBooking = async () =>{
       }
       
 
-      const res = await fetch(`http://localhost:3000/my-bookings/api/handleBooking/${params.id}`, {
+      const res = await fetch(`https://pc-repair-pros.vercel.app/my-bookings/api/handleBooking/${params.id}`, {
         method: 'PATCH',
         body: JSON.stringify(updateData),
         headers: {
