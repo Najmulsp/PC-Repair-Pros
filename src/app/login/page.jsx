@@ -12,33 +12,63 @@ import loading from "../loading";
 
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
 	const router = useRouter();
 	const searchParams = useSearchParams();
 	const path = searchParams.get('redirect');
-    const handleLogin = async (e) =>{
-        e.preventDefault();
-		const email = e.target.email.value;
-		const password = e.target.password.value;
-		console.log(email, password)
-		const res = await signIn("credentials", {
-			email,
-			password,
-			redirect : true,
-			callbackUrl : path? path : '/'
-		});
 
-		if(res.status === 200){
-			Swal.fire({
-				position: "top-end",
-				icon: "success",
-				title: "You have successfully logged in",
-				showConfirmButton: false,
-				timer: 1500
-			  });
-			  router.push('/');
-			console.log(res)
-		}
-    };
+
+const handleLogin = async (e) => {
+  e.preventDefault();
+  const email = e.target.email.value;
+  const password = e.target.password.value;
+
+  const res = await signIn("credentials", {
+    email,
+    password,
+    redirect: false,
+  });
+
+  if (res?.ok) {
+    setIsLoggedIn(true);
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "You have successfully logged in",
+      showConfirmButton: false,
+      timer: 1500,
+    }).then(() => {
+      router.push(path ? path : "/");
+      setIsLoggedIn(false);
+    });
+  }
+};
+
+	
+    // const handleLogin = async (e) =>{
+    //     e.preventDefault();
+	// 	const email = e.target.email.value;
+	// 	const password = e.target.password.value;
+	// 	console.log(email, password)
+	// 	const res = await signIn("credentials", {
+	// 		email,
+	// 		password,
+	// 		redirect : true,
+	// 		callbackUrl : path? path : '/'
+	// 	});
+
+	// 	if(res.status === 200){
+	// 		Swal.fire({
+	// 			position: "top-end",
+	// 			icon: "success",
+	// 			title: "You have successfully logged in",
+	// 			showConfirmButton: false,
+	// 			timer: 1500
+	// 		  });
+	// 		  router.push('/');
+	// 		console.log(res)
+	// 	}
+    // };
 
 
     return (

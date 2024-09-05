@@ -13,6 +13,7 @@ import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
 import { usePathname, useRouter } from "next/navigation";
+import Swal from "sweetalert2";
 
 const navLinks = [
   {
