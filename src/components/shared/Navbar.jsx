@@ -158,13 +158,14 @@ const Navbar = () => {
   }
             </ul>
           </div>
-          <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-serif">
+          <Link href="/" className="flex items-center gap-2 lg:text-2xl font-bold font-serif">
             <Image
               id="rotateNavIcon"
               height={30}
               width={30}
               alt="PC Repair Logo"
               src={logo}
+              className="hidden lg:block"
             ></Image>
             PC <span className="text-orange-500 font-bold font-serif">Repair</span> Pros
           </Link>
@@ -203,15 +204,14 @@ const Navbar = () => {
             session?
             <button
             onClick={handleLogout}
-            className="hover-effect btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            className="hover-effect btn border border-[#f2b076] border-collapse text-white lg:w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Logout
             </button>
             :
-            <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
+            <Link href={"/login"}><button className="hover-effect z-50 btn border border-[#f2b076] border-collapse text-white lg:w-32 bg-gradient-to-r from-[#f2b076] to-[#f24004]">
             Login
           </button></Link>
           }
-         {/* onClick={() => signOut({redirect: true, callbackUrl: "/"})}  */}
         </div>
       </div>
     </>

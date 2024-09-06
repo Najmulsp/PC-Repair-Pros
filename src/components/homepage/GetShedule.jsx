@@ -11,7 +11,7 @@ const GetShedule = () => {
   return (
     <div className="relative -mt-6 bg-white dark:bg-zinc-800 py-10" >
         
-        <Image  className="rounded-xl mx-auto" src={bgImg} width={1150} height={300} alt="bg image" />
+        <Image  className="rounded-xl mx-auto" src={bgImg} width={1150} height={400} alt="bg image" />
         
       <Image id="rotateStar2" className="absolute right-0 lg:right-24 top-10 lg:top-12 text-6xl text-orange-100 hover:text-orange-400" src={shape1} width={120} height={80} alt="icon" />
       <Image id="rotateStar1"  className="absolute left-2 lg:left-24 bottom-10 lg:bottom-12 text-7xl text-blue-100 hover:text-blue-400" src={shape2} width={120} height={80} alt="icon"/> 
@@ -21,7 +21,7 @@ const GetShedule = () => {
       data-aos-duration="1000"
       data-aos-delay="1000"
       data-aos="fade-right"
-      className="absolute w-4/5 top-20 lg:top-28  mx-auto text-2xl lg:text-4xl font-bold text-white left-12 lg:left-28 text-center leading-[30px] lg:leading-[60px] mt-0 ">
+      className="absolute w-4/5 top-16 lg:top-28  mx-auto text-xl lg:text-4xl font-bold text-white left-12 lg:left-28 text-center leading-[30px] lg:leading-[60px] mt-0 ">
         We Repair, You Relax. Click Below and Lets Fix Your Devices!
       </h1>
       <div
@@ -37,7 +37,7 @@ const GetShedule = () => {
              +123 456-7898{" "}</p>
         </div>  
         <span className="text-white lg:text-2xl ml-6 hidden lg:block"> OR</span>
-        <button className="hover-effect text-white text-xl ml-6 btn border border-[#f2b076] border-collapse  w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
+        <button className="hover-effect hidden lg:block text-white lg:text-xl ml-6 btn border border-[#f2b076] border-collapse  lg:w-52 bg-gradient-to-r from-[#f2b076] to-[#f24004] rounded-full">
               GET A SCHEDULE
             </button>
       </div>

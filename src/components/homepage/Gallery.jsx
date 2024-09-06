@@ -27,7 +27,7 @@ const Gallery = () => {
             data-aos-duration="1000"
             data-aos-delay="1200"
             data-aos="fade-left"
-            className="text-4xl mx-auto w-full lg:w-5/12 text-center font-bold py-6">Digital Delights: Journey Through Our Gallery</h1>
+            className="text-2xl lg:text-4xl mx-auto w-full lg:w-5/12 text-center font-bold py-6">Digital Delights: Journey Through Our Gallery</h1>
             
             <div className="grid grid-cols-8 gap-4 ">
                 <div className="main-container col-span-8 lg:col-span-4">

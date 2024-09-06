@@ -24,7 +24,7 @@ const Partners = () => {
         data-aos-duration="1000"
         data-aos-delay="1300"
         data-aos="fade-left"
-        className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Proudly Backed By Years of  Trusted Service</p>
+        className="text-2xl lg:text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Proudly Backed By Years of  Trusted Service</p>
 	</div>
 	<div className="container pt-10 pb-16 mx-auto flex flex-wrap justify-around gap-4 ">
 		<div className="">

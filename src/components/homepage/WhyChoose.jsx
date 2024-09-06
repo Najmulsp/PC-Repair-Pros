@@ -4,6 +4,7 @@ import icon1 from "../../../public/assets/logo/shape-16.png";
 import icon2 from "../../../public/assets/logo/shape-15.png";
 import logo1 from "../../../public/assets/background/why-choose (1).webp";
 import CountUp from "react-countup";
+import { SiTicktick } from "react-icons/si";
 
 
 const WhyChoose = () => {
@@ -27,8 +28,8 @@ const WhyChoose = () => {
               data-aos-duration="1000"
               data-aos-delay="1200"
               data-aos="fade-right"
-              className="text-2xl lg:text-4xl font-bold">
-                Experience Seamless Repairs: Your <br /> Devices Deserve the
+              className="text-2xl lg:text-4xl lg:w-3/5 font-bold">
+                Experience Seamless Repairs: Your Devices Deserve the
                 Best
               </h2>
             </div>
@@ -57,14 +58,12 @@ const WhyChoose = () => {
               <div className="flex flex-col space-y-2">
                 <h3 className="flex items-center space-x-2 dark:text-gray-600">
                   <span className="flex items-center mb-4 space-x-2 dark:text-orange-600">
-                    <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
-                      <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
-                    </span>
+                    <SiTicktick />
                     <span className="text-xl font-bold tracking-wider uppercase pl-2">
                         Exceptional Expertise
                     </span>
                   </span>
-                  <span className="text-xl font-bold tracking-wider uppercase"></span>
+                  
                 </h3>
                 <p className="pl-2">
                   Our skilled technicians bring years of experience and
@@ -75,9 +74,7 @@ const WhyChoose = () => {
               <div className="flex flex-col space-y-2">
                 <h3 className="flex items-center space-x-2 dark:text-gray-600">
                   <span className="flex items-center mb-4 space-x-2 dark:text-orange-600">
-                    <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
-                      <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
-                    </span>
+                  <SiTicktick />
                     <span className="text-xl font-bold tracking-wider uppercase pl-2">
                       Customer-Centric Approach
                     </span>
@@ -93,9 +90,7 @@ const WhyChoose = () => {
               <div className="flex flex-col space-y-2">
                 <h3 className="flex items-center space-x-2 dark:text-gray-600">
                   <span className="flex items-center mb-4 space-x-2 dark:text-orange-600">
-                    <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
-                      <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
-                    </span>
+                  <SiTicktick />
                     <span className="text-xl font-bold tracking-wider uppercase pl-2">
                       Quality Guaranteed
                     </span>
@@ -110,9 +105,7 @@ const WhyChoose = () => {
               <div className="flex flex-col space-y-2">
                 <h3 className="flex items-center space-x-2 dark:text-gray-600">
                   <span className="flex items-center mb-4 space-x-2 dark:text-orange-600">
-                    <span className="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-orange-600">
-                      <span className="absolute flex-shrink-0 w-3 h-3 rounded-full -left-0.5 -top-0.5 animate-ping dark:bg-orange-600"></span>
-                    </span>
+                  <SiTicktick />
                     <span className="text-xl font-bold tracking-wider uppercase pl-2">
                       Passionate Team
                     </span>

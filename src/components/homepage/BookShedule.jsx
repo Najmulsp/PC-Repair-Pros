@@ -20,7 +20,7 @@ const BookShedule = () => {
 			data-aos-duration="1000"
 			data-aos-delay="1200"
 			data-aos="fade-left"
-			className="text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Schedule Expert Repairs Instantly</p>
+			className="text-2xl lg:text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Schedule Expert Repairs Instantly</p>
 		</div>
 	<div className="container  mx-auto flex flex-col lg:flex-row items-center gap-6">
         <div>

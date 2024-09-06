@@ -7,10 +7,12 @@ import SocialLogin from "@/components/shared/SocialLogin";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import { Suspense, useState } from "react";
 import loading from "../loading";
+import { useRouter } from "next/navigation";
 
 
 const Register = () => {
 	const [showPassword, setShowPassword] = useState(false);
+	const router = useRouter();
 
     const handleRegister = async (e) =>{
         e.preventDefault();
@@ -37,6 +39,7 @@ const Register = () => {
 				timer: 1500
 			  });
 		e.target.reset()
+		router.push("/login"); 
 		}
     }
 	

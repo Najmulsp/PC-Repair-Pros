@@ -32,12 +32,12 @@ const AboutUs = () => {
 		data-aos-delay="1200"
 		data-aos="fade-left"
 		className="flex lg:w-3/5 border-green-600 flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
-		<p className="flex ml-24 pb-2 text-orange-500 items-center mx-auto  justify-start pt-2 gap-3">
+		<p className="flex lg:ml-24 pb-2 text-orange-500 text-center items-center mx-auto  justify-start pt-2 gap-3">
               <Image src={icon1} width={40} height={40} alt="icon" />
               ABOUT US
               <Image src={icon1} width={40} height={40} alt="icon" />
             </p>
-			<h1 className="text-4xl font-bold leading-none sm:text-5xl">Empowering Your Devices: <span className="bg-gradient-to-r from-[#f2b076] to-[#f24004] bg-clip-text text-transparent">Crafting Solutions</span>
+			<h1 className="text-2xl lg:text-4xl font-bold leading-none ">Empowering Your Devices: <span className="bg-gradient-to-r from-[#f2b076] to-[#f24004] bg-clip-text text-transparent">Crafting Solutions</span>
 				 
 			</h1>
 			<p className="mt-6 mb-8 text-lg sm:mb-12">Welcome to PC Repair Pros, where technology meets expertise. With a passion for problem-solving and a dedication to exceptional service
@@ -45,16 +45,16 @@ const AboutUs = () => {
 			</p>
 			<div className="grid grid-cols-2 gap-6 mb-10">
 				<p className="flex font-bold items-center gap-2">
-				<FaScrewdriverWrench className="text-3xl  text-orange-600 bg-orange-100 hover:text-white hover:bg-orange-600 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
+				<FaScrewdriverWrench className="text-4xl lg:text-3xl  text-orange-600 bg-orange-100 hover:text-white hover:bg-orange-600 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
 				</p>
 				<p className="flex font-bold items-center gap-2">
-				<GiAutoRepair className="text-3xl text-blue-700 bg-blue-100 hover:text-white hover:bg-blue-800 w-16 h-16 p-2 rounded-lg"/>Quality Repairs
+				<GiAutoRepair className="text-4xl lg:text-3xl text-blue-700 bg-blue-100 hover:text-white hover:bg-blue-800 w-16 h-16 p-2 rounded-lg"/>Quality Repairs
 				</p>
 				<p className="flex font-bold items-center gap-2">
-				<ImStopwatch className="text-3xl text-blue-700 bg-blue-100 hover:text-white hover:bg-blue-800 w-16 h-16 p-2 rounded-lg"/>Quick Turnaround
+				<ImStopwatch className="text-4xl lg:text-3xl text-blue-700 bg-blue-100 hover:text-white hover:bg-blue-800 w-16 h-16 p-2 rounded-lg"/>Quick Turnaround
 				</p>
 				<p className="flex font-bold items-center gap-2">
-				<FaPeopleCarry className="text-3xl text-orange-600  bg-orange-100 hover:text-white hover:bg-orange-600 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
+				<FaPeopleCarry className="text-5xl lg:text-3xl text-orange-600  bg-orange-100 hover:text-white hover:bg-orange-600 w-16 h-16 p-2 rounded-lg"/>Expert Technicians
 				</p>
 			</div>
 			<div>

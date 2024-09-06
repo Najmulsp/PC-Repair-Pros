@@ -31,8 +31,8 @@ const Testimonial = () => {
             data-aos-duration="1000"
             data-aos-delay="1200"
             data-aos="fade-left"
-            className="text-center mx-auto w-full lg:w-6/12 text-white text-4xl font-bold">
-              Success Stories: From Our Client’s Perspective
+            className="text-center mx-auto w-full lg:w-6/12 text-white text-2xl lg:text-4xl font-bold">
+              Success Stories: From Our Client Perspective
             </h1>
           </div>
 

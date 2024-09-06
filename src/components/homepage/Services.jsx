@@ -37,7 +37,7 @@ const Services =  () => {
       data-aos-duration="3000"
       data-aos-delay="3500"
       data-aos="fade-left"
-      className=" text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Fast and Reliable Repairs of Every Need</p>
+      className="text-2xl lg:text-4xl mx-auto w-full lg:w-5/12 font-bold dark:text-gray-600">Fast and Reliable Repairs of Every Need</p>
 		</div>
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
     {
